@@ -1,0 +1,29 @@
+import React, { Component } from 'react'
+
+import StyledSlatOuter from './StyledSlatOuter'
+import StyledSlatInner from './StyledSlatInner'
+
+export class HomePageHeader extends Component {
+  render() {
+    return (
+      <HomePageHeaderStyles className='header__outer'>
+        <StyledSlatInner className='header__inner'>
+        </StyledSlatInner>
+      </HomePageHeaderStyles>
+    )
+  }
+}
+
+const HomePageHeaderStyles = StyledSlatOuter.extend`
+  height: 645px;
+  box-shadow: rgba(32,32,32,0.05) 0px 0px 30px 0px;
+
+  .header {
+    &__outer {
+    }
+
+    &__inner {
+      height: 100%;
+    }
+  }
+`
