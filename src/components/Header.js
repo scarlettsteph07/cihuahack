@@ -18,7 +18,7 @@ export const Header = () => {
 }
 
 const HeaderStyles = StyledSlatOuter.extend`
-  color: ${({theme}) => theme.brown};
+  color: ${({theme}) => theme.textPrimary};
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
@@ -41,7 +41,7 @@ const HeaderStyles = StyledSlatOuter.extend`
       width: 146px;
       height: 90px;
       background-image: url(/images/logo--cihuatan.png);
-      background-color: ${({theme}) => theme.brown};
+      background-color: ${({theme}) => theme.textPrimary};
       background-position: left center;
       background-repeat: no-repeat;
     }

@@ -4,7 +4,7 @@ let theme = {
   softGreen:                '#7da87b',
   brown:                    '#5c3c10',
 
-  textPrimary:              '#202020',
+  textPrimary:              '#232931',
 
   transparent:              'transparent',
   black:                    '#000000',
