@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ThemeProvider } from 'styled-components'
 
-import { DesktopMenu, HomePage, Footer } from './components'
+import { Header, HomePage, Footer } from './components'
 import theme from './components/theme'
 import './App.css'
 
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <div className="App">
-          <DesktopMenu />
+          <Header />
           <HomePage />
           <Footer />
         </div>

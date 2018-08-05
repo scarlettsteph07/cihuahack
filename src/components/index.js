@@ -1,4 +1,5 @@
 export * from './DesktopMenu'
 export * from './Footer'
+export * from './Header'
 export * from './HomePage'
 export * from './HomePageHeader'
