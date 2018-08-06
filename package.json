@@ -14,10 +14,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint src --color"
+    "lint": "eslint src --color",
+    "flow": "flow"
   },
   "devDependencies": {
     "eslint": "^5.3.0",
-    "eslint-plugin-react": "^7.10.0"
+    "eslint-plugin-react": "^7.10.0",
+    "flow-bin": "^0.78.0"
   }
 }
