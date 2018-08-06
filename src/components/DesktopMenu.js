@@ -4,6 +4,7 @@ import _ from 'lodash/fp'
 import StyledSlatOuter from './StyledSlatOuter'
 import StyledSlatInner from './StyledSlatInner'
 import SectionsData from '../lib/data'
+import { MEDIA_LINK } from '../lib/appConstants'
 
 export const DesktopMenu = () => {
   return (
@@ -19,8 +20,21 @@ export const DesktopMenu = () => {
                 </li>
               )(SectionsData)
             }
-            <li><a className='nav-share nav-share__twitter' /></li>
-            <li><a className='nav-share nav-share__facebook' /></li>
+            <li>
+              <a
+                className='nav-social-media nav-social-media__twitter'
+                href={MEDIA_LINK.TWITTER}
+                target='_blank'
+                rel='noopener noreferrer'
+              /></li>
+            <li>
+              <a
+                className='nav-social-media nav-social-media__facebook'
+                href={MEDIA_LINK.FACEBOOK}
+                target='_blank'
+                rel='noopener noreferrer'
+              />
+            </li>
           </ul>
         </nav>
       </StyledSlatInner>
@@ -78,7 +92,7 @@ const DesktopMenuStyles = StyledSlatOuter.extend`
     color: inherit;
   }
 
-  .nav-share {
+  .nav-social-media {
     border-top: 10px solid ${({theme}) => theme.transparent};
     border-bottom: 10px solid ${({theme}) => theme.transparent};
     padding: 15px;
