@@ -1,5 +1,7 @@
 let theme = {
 
+  blue:                     '#000D72',
+  red:                      '#94323E',
   softYellow:               '#f5f5c6',
   softGreen:                '#7da87b',
   brown:                    '#5c3c10',

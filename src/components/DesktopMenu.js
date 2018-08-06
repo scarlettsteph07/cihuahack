@@ -77,7 +77,7 @@ const DesktopMenuStyles = StyledSlatOuter.extend`
         align-items: center;
 
         &:hover {
-          border-top: 10px solid ${({theme}) => theme.textPrimary};
+          border-top: 10px solid ${({theme}) => theme.red};
         }
       }
     }

@@ -8,6 +8,7 @@ export class HomePageHeader extends Component {
     return (
       <HomePageHeaderStyles className='header__outer'>
         <StyledSlatInner className='header__inner'>
+          <div className='header__image'></div>
         </StyledSlatInner>
       </HomePageHeaderStyles>
     )
@@ -24,6 +25,16 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
 
     &__inner {
       height: 100%;
+      padding: 0px;
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      background-image: url(/images/cihuahack.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 `

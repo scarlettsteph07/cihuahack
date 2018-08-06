@@ -27,5 +27,5 @@ export class HomePage extends Component {
 }
 
 const HomePageStyles = styled.div`
-  color: ${({theme}) => theme.textPrimary}
+  color: ${({theme}) => theme.red}
 `
