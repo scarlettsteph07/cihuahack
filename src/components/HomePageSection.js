@@ -23,7 +23,7 @@ export const HomePageSection = ({title, slug, children}: Props) => {
 }
 
 const HomePageSectionStyles = StyledSlatOuter.extend`
-  box-shadow: rgba(32,32,32,0.05) 0px 0px 30px 0px;
+  box-shadow: ${({theme}) => theme.boxShadow};
 
   .section {
     &__inner {

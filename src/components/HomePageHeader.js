@@ -17,7 +17,7 @@ export class HomePageHeader extends Component {
 
 const HomePageHeaderStyles = StyledSlatOuter.extend`
   height: 645px;
-  box-shadow: rgba(32,32,32,0.05) 0px 0px 30px 0px;
+  box-shadow: ${({theme}) => theme.boxShadow};
 
   .header {
     &__outer {

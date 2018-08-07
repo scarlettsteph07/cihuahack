@@ -23,7 +23,7 @@ const HeaderStyles = StyledSlatOuter.extend`
   text-transform: uppercase;
   font-weight: 600;
 
-  box-shadow: rgba(32,32,32,0.05) 0px 0px 30px 0px;
+  box-shadow: ${({theme}) => theme.boxShadow};
 
   .header {
     display: flex;
