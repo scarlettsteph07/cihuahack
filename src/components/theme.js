@@ -14,8 +14,8 @@ let theme = {
 
   boxShadow:                'rgba(32,32,32,0.05) 0px 0px 30px 0px',
 
-  baseFont: '"Trebuchet MS", sans-serif',
-  secondaryFont: '"Helvetica", sans-serif',
+  baseFont: '"Inconsolata", monospace',
+  secondaryFont: '"Inconsolata", monospace',
 
   shortNavHeight: '65px',
   tallNavHeight: '90px',
