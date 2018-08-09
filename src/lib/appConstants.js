@@ -4,3 +4,9 @@ export const CONTACT_LINKS = {
   TWITTER:  'https://www.twitter.com/cihuahack',
   EMAIL:    'info@cihuahack.com',
 }
+
+export const BRAND = {
+  TITLE:    'Cihuahack',
+  SLOGAN:   'Hackathón por un por un Cihuatán virtual',
+  HASHTAGS:  ['Cihuahack', 'HackathonSV'],
+}

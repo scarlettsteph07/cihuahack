@@ -4,7 +4,7 @@ import _ from 'lodash/fp'
 import StyledSlatOuter from './StyledSlatOuter'
 import StyledSlatInner from './StyledSlatInner'
 import SectionsData from '../lib/data'
-import { CONTACT_LINKS } from '../lib/appConstants'
+import { CONTACT_LINKS, BRAND } from '../lib/appConstants'
 
 export const DesktopMenu = () => {
   return (
@@ -22,19 +22,19 @@ export const DesktopMenu = () => {
             }
             <li>
               <a
-                className='nav-social-media nav-social-media__twitter'
-                href={CONTACT_LINKS.TWITTER}
-                target='_blank'
-                rel='noopener noreferrer'
-              /></li>
-            <li>
-              <a
                 className='nav-social-media nav-social-media__facebook'
-                href={CONTACT_LINKS.FACEBOOK}
+                href={`http://www.facebook.com/sharer.php?u=${encodeURIComponent(decodeURIComponent(CONTACT_LINKS.WEBSITE))}`}
                 target='_blank'
                 rel='noopener noreferrer'
               />
             </li>
+            <li>
+              <a
+                className='nav-social-media nav-social-media__twitter'
+                href={`https://twitter.com/share?url=${CONTACT_LINKS.WEBSITE}&amp;text=${encodeURIComponent(BRAND.SLOGAN)}&amp;hashtags=${BRAND.HASHTAGS}`}
+                target='_blank'
+                rel='noopener noreferrer'
+              /></li>
           </ul>
         </nav>
       </StyledSlatInner>
@@ -43,12 +43,12 @@ export const DesktopMenu = () => {
 }
 
 const DesktopMenuStyles = StyledSlatOuter.extend`
-    nav {
-      width: 100%;
-      height: 90px;
-      display: flex;
-      justify-content: center;
-    }
+  nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+  }
 
   .desktop-menu {
     &__outer {
