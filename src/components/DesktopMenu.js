@@ -12,7 +12,6 @@ export const DesktopMenu = () => {
       <StyledSlatInner className='desktop-menu__inner'>
         <nav>
           <ul className='desktop-menu__nav-list'>
-            <li><a className='nav-item' href='#inicio'>Inicio</a></li>
             {
               _.map((section) =>
                 <li key={section.id}>

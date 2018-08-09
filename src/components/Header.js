@@ -9,7 +9,7 @@ export const Header = () => {
     <HeaderStyles className='header__outer'>
       <StyledSlatInner className='header__inner'>
         <header className='header'>
-          <a className='header__logo' href='#'/>
+          <a className='header__logo' href='/' />
           <DesktopMenu />
         </header>
       </StyledSlatInner>
@@ -18,10 +18,13 @@ export const Header = () => {
 }
 
 const HeaderStyles = StyledSlatOuter.extend`
+  background: ${({theme}) => theme.white};
   color: ${({theme}) => theme.red};
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
+  position: fixed;
+  z-index: 1000;
 
   box-shadow: ${({theme}) => theme.boxShadow};
 
