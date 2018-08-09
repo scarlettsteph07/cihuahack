@@ -4,7 +4,7 @@ import _ from 'lodash/fp'
 import StyledSlatOuter from './StyledSlatOuter'
 import StyledSlatInner from './StyledSlatInner'
 import SectionsData from '../lib/data'
-import { MEDIA_LINK } from '../lib/appConstants'
+import { CONTACT_LINKS } from '../lib/appConstants'
 
 export const DesktopMenu = () => {
   return (
@@ -23,14 +23,14 @@ export const DesktopMenu = () => {
             <li>
               <a
                 className='nav-social-media nav-social-media__twitter'
-                href={MEDIA_LINK.TWITTER}
+                href={CONTACT_LINKS.TWITTER}
                 target='_blank'
                 rel='noopener noreferrer'
               /></li>
             <li>
               <a
                 className='nav-social-media nav-social-media__facebook'
-                href={MEDIA_LINK.FACEBOOK}
+                href={CONTACT_LINKS.FACEBOOK}
                 target='_blank'
                 rel='noopener noreferrer'
               />
