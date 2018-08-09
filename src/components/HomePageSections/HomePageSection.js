@@ -1,8 +1,8 @@
 // @flow
 import React from 'react'
 
-import StyledSlatOuter from './StyledSlatOuter'
-import StyledSlatInner from './StyledSlatInner'
+import StyledSlatOuter from '../StyledSlatOuter'
+import StyledSlatInner from '../StyledSlatInner'
 
 // TODO: fix linter parsing error
 type Props = {

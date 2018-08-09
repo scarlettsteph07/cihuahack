@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import _ from 'lodash/fp'
 
-import { HomePageHeader, HomePageSection } from './'
+import { HomePageHeader } from './'
+import { HomePageSection } from './HomePageSections/'
 import SectionsData from '../lib/data'
 
 export class HomePage extends Component {
