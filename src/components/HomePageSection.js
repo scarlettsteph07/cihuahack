@@ -13,7 +13,7 @@ type Props = {
 
 export const HomePageSection = ({title, slug, children}: Props) => {
   return (
-    <HomePageSectionStyles>
+    <HomePageSectionStyles id={slug}>
       <StyledSlatInner className='section__inner' id={slug}>
         <h2 className='section__title'>{title}</h2>
         <div className='section__content'>{children}</div>
@@ -23,8 +23,11 @@ export const HomePageSection = ({title, slug, children}: Props) => {
 }
 
 const HomePageSectionStyles = StyledSlatOuter.extend`
-  box-shadow: ${({theme}) => theme.boxShadow};
-
+  :target {
+    display: block;
+    padding-top: 90px;
+    margin-top: -90px;
+  }
   .section {
     &__inner {
       display: flex;
