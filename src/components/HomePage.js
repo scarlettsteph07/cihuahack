@@ -5,6 +5,7 @@ import { HomePageHeader } from './'
 import {
   AboutSection,
   HowToParticipateSection,
+  PrizesSection,
 } from './HomePageSections/'
 // import SectionsData from '../lib/data'
 
@@ -15,6 +16,7 @@ export class HomePage extends Component {
         <HomePageHeader/>
         <AboutSection />
         <HowToParticipateSection />
+        <PrizesSection />
       </HomePageStyles>
     )
   }
