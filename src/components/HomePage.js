@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { HomePageHeader } from './'
 import {
   AboutSection,
+  HowToParticipateSection,
 } from './HomePageSections/'
 // import SectionsData from '../lib/data'
 
@@ -13,6 +14,7 @@ export class HomePage extends Component {
       <HomePageStyles className='home-page'>
         <HomePageHeader/>
         <AboutSection />
+        <HowToParticipateSection />
       </HomePageStyles>
     )
   }
