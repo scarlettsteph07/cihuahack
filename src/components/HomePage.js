@@ -8,6 +8,7 @@ import {
   PrizesSection,
   FaqsSection,
   OrganizersSection,
+  SupportersSection,
 } from './HomePageSections/'
 // import SectionsData from '../lib/data'
 
@@ -21,6 +22,7 @@ export class HomePage extends Component {
         <PrizesSection />
         <FaqsSection />
         <OrganizersSection />
+        <SupportersSection />
       </HomePageStyles>
     )
   }
