@@ -7,6 +7,7 @@ import {
   HowToParticipateSection,
   PrizesSection,
   FaqsSection,
+  OrganizersSection,
 } from './HomePageSections/'
 // import SectionsData from '../lib/data'
 
@@ -19,6 +20,7 @@ export class HomePage extends Component {
         <HowToParticipateSection />
         <PrizesSection />
         <FaqsSection />
+        <OrganizersSection />
       </HomePageStyles>
     )
   }

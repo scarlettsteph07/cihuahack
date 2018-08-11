@@ -9,16 +9,19 @@ type Props = {
   title: string,
   slug: string,
   headerImage?: string,
+  url? : string,
   children?: string,
 }
 
-export const HomePageSection = ({title, slug, children, headerImage}: Props) => {
+export const HomePageSection = ({title, slug, children, headerImage, url}: Props) => {
   return (
     <HomePageSectionStyles id={slug} headerImage={headerImage}>
       <StyledSlatInner className='section__inner' id={slug}>
         <div className='section__header'>
           <h2 className='section__header__title'>{title}</h2>
-          <div className='section__header__image'></div>
+          <a href={url} target='_blank' rel='noopener noreferrer'>
+            <div className='section__header__image'/>
+          </a>
         </div>
 
         <div className='section__content'>{children}</div>
@@ -55,6 +58,7 @@ const HomePageSectionStyles = StyledSlatOuter.extend`
         background-image: ${({headerImage}) => headerImage || ''};
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
       }
     }
 
