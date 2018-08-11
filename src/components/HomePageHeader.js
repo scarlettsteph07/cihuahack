@@ -6,9 +6,9 @@ import StyledSlatInner from './StyledSlatInner'
 export class HomePageHeader extends Component {
   render() {
     return (
-      <HomePageHeaderStyles className='header__outer'>
-        <StyledSlatInner className='header__inner'>
-          <div className='header__image'></div>
+      <HomePageHeaderStyles className='home-page-header__outer'>
+        <StyledSlatInner className='home-page-header__inner'>
+          <div className='home-page-header__image'></div>
         </StyledSlatInner>
       </HomePageHeaderStyles>
     )
@@ -19,7 +19,7 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
   height: 645px;
   box-shadow: ${({theme}) => theme.boxShadow};
 
-  .header {
+  .home-page-header {
     &__outer {
     }
 
@@ -31,7 +31,7 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
     &__image {
       width: 100%;
       height: 100%;
-      background-image: url(/images/cihuahack.png);
+      background-image: url(/svg/cover--with-logos.svg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
