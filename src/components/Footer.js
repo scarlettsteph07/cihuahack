@@ -8,34 +8,39 @@ import { CONTACT_URLS } from '../lib/appConstants'
 export const Footer = () => {
   return (
     <FooterStyles className='footer'>
-      <StyledSlatOuter className='footer-info__outer'>
-        <StyledSlatInner className='footer-info__inner'>
-        </StyledSlatInner>
-      </StyledSlatOuter>
-
-      <StyledSlatOuter className='footer-social__outer'>
-        <StyledSlatInner className='footer-social__inner'>
-          <div className='social-media-links'>
-            Contáctanos en
+      <StyledSlatOuter className='footer__contact__outer'>
+        <StyledSlatInner className='footer__contact__inner'>
+          <h2 className='footer__contact__title'>¿Preguntas?</h2>
+          <div className='footer__contact__info'>
             <a
-              className='social-media social-media__facebook'
+              className='footer__contact__info__logo footer__contact__info__logo__email'
+              href={`mailto:${CONTACT_URLS.EMAIL}?Subject=Información%20Cihuahack%20`}
+              target='_blank'
+              rel='noopener noreferrer'
+            />
+            <span className='footer__contact__info__text'>
+              Escríbenos a
+              <a href={`mailto:${CONTACT_URLS.EMAIL}?Subject=Información%20Cihuahack%20`}>{CONTACT_URLS.EMAIL}</a>
+            </span>
+          </div>
+          <div className='footer__contact__info'>
+            <a
+              className='footer__contact__info__logo footer__contact__info__logo__facebook'
               href={CONTACT_URLS.FACEBOOK}
               target='_blank'
               rel='noopener noreferrer'
             />
-            <a
-              className='social-media social-media__twitter'
-              href={CONTACT_URLS.TWITTER}
-              target='_blank'
-              rel='noopener noreferrer'
-            />
-            <a
-              className='social-media social-media__email'
-              href={`mailto:${CONTACT_URLS.EMAIL}?Subject=Información%20Cihuahack%20`}
-              target='_top'
-              rel='noopener noreferrer'
-            />
+            <span className='footer__contact__info__text'>
+            Síguenos en
+              <a href={CONTACT_URLS.FACEBOOK}>{CONTACT_URLS.FACEBOOK}</a>
+            </span>
           </div>
+        </StyledSlatInner>
+      </StyledSlatOuter>
+
+      <StyledSlatOuter className='footer__disclosure__outer'>
+        <StyledSlatInner className='footer__disclosure__inner'>
+          Este proyecto es financiado por el Public Diplomacy Innovation Fund
         </StyledSlatInner>
       </StyledSlatOuter>
     </FooterStyles>
@@ -43,62 +48,104 @@ export const Footer = () => {
 }
 
 const FooterStyles = styled.div`
-  height: 400px;
-  color: ${({theme}) => theme.red};
+  height: 360px;
 
-  .footer-info {
-    &__outer {
-      height: 75%;
-      box-shadow: ${({theme}) => theme.boxShadow};
-    }
-    &__inner {
-      height: 100%;
-    }
-  }
-  .footer-social {
-    &__outer {
-      height: 25%;
-      box-shadow: ${({theme}) => theme.boxShadow};
-    }
-    &__inner {
-      height: 100%;
-    }
-  }
+  .footer{
+    &__contact {
+      &__outer {
+        height: 75%;
+        background-color: ${({theme}) => theme.red};
+        color: ${({theme}) => theme.white};
+        display: flex;
+      }
 
-  .social-media-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
+      &__inner {
+        height: inherit;
+        padding: 0;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
 
-    &__list {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-around;
+      &__title {
+        font-size: 35px;
+        text-transform: capitalize;
+        margin: 0px;
+      }
+
+      &__info {
+        display: flex;
+        align-items: center;
+
+        &__logo {
+          width: 50px;
+          height: 50px;
+          margin-right: 15px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          &:after {
+            content: '';
+            position: absolute;
+            width: inherit;
+            height: inherit;
+          }
+          &:hover {
+            background-color: white;
+            border-radius: 25px;
+          }
+
+          &__email {
+            background-image: url(/svg/icon--mail-white.svg);
+            &:hover {
+              background-image: url(/svg/icon--mail-red.svg);
+            }
+          }
+
+          &__facebook {
+            background-image: url(/svg/icon--facebook-white.svg);
+            &:hover {
+              background-image: url(/svg/icon--facebook-red.svg);
+            }
+          }
+        }
+
+        &__text {
+          a {
+            margin-left: 10px;
+            color: inherit;
+            text-decoration: none;
+            border-bottom: solid 2px white;
+            padding-bottom: 2px;
+
+            &:hover {
+              background-color: ${({theme}) => theme.white};
+              color: ${({theme}) => theme.red};
+            }
+          }
+        }
+      }
     }
-  }
 
-  .social-media {
-    padding: 15px;
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
+    &__disclosure {
+      &__outer {
+        height: 25%;
+        box-shadow: ${({theme}) => theme.boxShadow};
+        color: ${({theme}) => theme.red};
+      }
 
-    &:hover {
-      opacity: 0.5;
-    }
-
-    &__email {
-      background-image: url(/svg/icon--email.svg);
-    }
-
-    &__twitter {
-      background-image: url(/svg/icon--twitter.svg);
-    }
-
-    &__facebook {
-      background-image: url(/svg/icon--facebook.svg);
+      &__inner {
+        width: 80%;
+        height: 100%;
+        padding: 0;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+      }
     }
   }
 `
