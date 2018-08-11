@@ -21,7 +21,7 @@ const HeaderStyles = StyledSlatOuter.extend`
   background: ${({theme}) => theme.white};
   color: ${({theme}) => theme.red};
   font-size: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 600;
   position: fixed;
   z-index: 1000;
@@ -41,9 +41,9 @@ const HeaderStyles = StyledSlatOuter.extend`
     }
 
     &__logo {
-      width: 146px;
+      width: 200px;
       height: 90px;
-      background-image: url(/images/logo--cihuahack.png);
+      background-image: url(/svg/logo--wordmark.svg);
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import StyledSlatOuter from './StyledSlatOuter'
 import StyledSlatInner from './StyledSlatInner'
-import { CONTACT_LINKS } from '../lib/appConstants'
+import { CONTACT_URLS } from '../lib/appConstants'
 
 export const Footer = () => {
   return (
@@ -19,19 +19,19 @@ export const Footer = () => {
             Contáctanos en
             <a
               className='social-media social-media__facebook'
-              href={CONTACT_LINKS.FACEBOOK}
+              href={CONTACT_URLS.FACEBOOK}
               target='_blank'
               rel='noopener noreferrer'
             />
             <a
               className='social-media social-media__twitter'
-              href={CONTACT_LINKS.TWITTER}
+              href={CONTACT_URLS.TWITTER}
               target='_blank'
               rel='noopener noreferrer'
             />
             <a
               className='social-media social-media__email'
-              href={`mailto:${CONTACT_LINKS.EMAIL}?Subject=Información%20Cihuahack%20`}
+              href={`mailto:${CONTACT_URLS.EMAIL}?Subject=Información%20Cihuahack%20`}
               target='_top'
               rel='noopener noreferrer'
             />

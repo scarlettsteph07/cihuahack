@@ -4,7 +4,7 @@ import _ from 'lodash/fp'
 import StyledSlatOuter from './StyledSlatOuter'
 import StyledSlatInner from './StyledSlatInner'
 import SectionsData from '../lib/data'
-import { CONTACT_LINKS, BRAND } from '../lib/appConstants'
+import { CONTACT_URLS, BRANDING } from '../lib/appConstants'
 
 export const DesktopMenu = () => {
   return (
@@ -22,7 +22,7 @@ export const DesktopMenu = () => {
             <li>
               <a
                 className='nav-social-media nav-social-media__facebook'
-                href={`http://www.facebook.com/sharer.php?u=${encodeURIComponent(decodeURIComponent(CONTACT_LINKS.WEBSITE))}`}
+                href={`http://www.facebook.com/sharer.php?u=${encodeURIComponent(decodeURIComponent(CONTACT_URLS.WEBSITE))}`}
                 target='_blank'
                 rel='noopener noreferrer'
               />
@@ -30,10 +30,11 @@ export const DesktopMenu = () => {
             <li>
               <a
                 className='nav-social-media nav-social-media__twitter'
-                href={`https://twitter.com/share?url=${CONTACT_LINKS.WEBSITE}&amp;text=${encodeURIComponent(BRAND.SLOGAN)}&amp;hashtags=${BRAND.HASHTAGS}`}
+                href={`https://twitter.com/share?url=${CONTACT_URLS.WEBSITE}&amp;text=${encodeURIComponent(BRANDING.SHARE_TEXT)}&amp;hashtags=${BRANDING.HASHTAGS}`}
                 target='_blank'
                 rel='noopener noreferrer'
-              /></li>
+              />
+            </li>
           </ul>
         </nav>
       </StyledSlatInner>
@@ -98,14 +99,15 @@ const DesktopMenuStyles = StyledSlatOuter.extend`
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
 
     &__twitter {
-      background-image: url(/svg/icon--twitter.svg);
+      background-image: url(/svg/icon--twitter-red.svg);
     }
 
     &__facebook {
-      background-image: url(/svg/icon--facebook.svg);
+      background-image: url(/svg/icon--facebook-red.svg);
     }
   }
 `
