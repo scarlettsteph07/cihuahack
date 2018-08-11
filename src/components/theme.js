@@ -12,6 +12,8 @@ let theme = {
   black:                    '#000000',
   white:                    '#ffffff',
 
+  bgGray:                   '#fafafa',
+
   boxShadow:                'rgba(32,32,32,0.05) 0px 0px 30px 0px',
 
   baseFont: '"Inconsolata", monospace',

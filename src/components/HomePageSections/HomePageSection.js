@@ -8,14 +8,19 @@ import StyledSlatInner from '../StyledSlatInner'
 type Props = {
   title: string,
   slug: string,
+  headerImage?: string,
   children?: string,
 }
 
-export const HomePageSection = ({title, slug, children}: Props) => {
+export const HomePageSection = ({title, slug, children, headerImage}: Props) => {
   return (
-    <HomePageSectionStyles id={slug}>
+    <HomePageSectionStyles id={slug} headerImage={headerImage}>
       <StyledSlatInner className='section__inner' id={slug}>
-        <h2 className='section__title'>{title}</h2>
+        <div className='section__header'>
+          <h2 className='section__header__title'>{title}</h2>
+          <div className='section__header__image'></div>
+        </div>
+
         <div className='section__content'>{children}</div>
       </StyledSlatInner>
     </HomePageSectionStyles>
@@ -23,6 +28,7 @@ export const HomePageSection = ({title, slug, children}: Props) => {
 }
 
 const HomePageSectionStyles = StyledSlatOuter.extend`
+  border-bottom: solid 10px ${({theme}) => theme.bgGray};
   :target {
     display: block;
     padding-top: 90px;
@@ -32,17 +38,30 @@ const HomePageSectionStyles = StyledSlatOuter.extend`
     &__inner {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
     }
 
-    &__title {
+    &__header {
       width: 20%;
-      font-size: 35px;
-      text-transform: uppercase;
+      &__title {
+        font-size: 35px;
+        text-transform: capitalize;
+        text-align: left;
+        margin: 0px;
+      }
+      &__image {
+        width: 250px;
+        height: 250px;
+        background-image: ${({headerImage}) => headerImage || ''};
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
     }
 
     &__content {
-      width: 60%;
+      width: 75%;
       text-align: left;
+      color: ${({theme}) => theme.textPrimary};
     }
   }
 `
