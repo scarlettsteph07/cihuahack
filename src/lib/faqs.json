@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "question": "¿En qué consiste Cihuahack?",
+    "answer": [
+      "En el desarrollo aplicaciones de Realidad Aumentada y Virtual AR/VR que resuelvan retos específicos al parque arqueológico Cihuatán. "
+    ],
+    "answer_type": "text"
+  },
+  {
+    "id": 2,
+    "question": "¿Cuándo será Cihuahack?",
+    "answer": [
+      "El evento se llevará a cabo el Sábado 27 de octubre de 2018 desde las 8 am, hasta el domingo 28 de octubre a las 6 pm."
+    ],
+    "answer_type": "text"
+  },
+  {
+    "id": 3,
+    "question": "¿Dónde se llevará a cabo Cihuahack?",
+    "answer": [
+      "Se llevará a cabo en el American Space del Centro Cultural Salvadoreño Americano, Avenida Los Sisimiles a un costado de Metrocentro Norte. "
+    ],
+    "answer_type": "text"
+  },
+  {
+    "id": 4,
+    "question": "Mencionan un evento de preparación ¿Cuándo se llevará a cabo y en qué consiste?",
+    "answer": [
+      "El 25 de agosto a las 9:30 am en la sede oficial del evento, el Centro Cultural Salvadoreño Americano. Se dará un detalle de todos los aspectos del evento, demostración de Realidad Aumentada y Virtual A/R V/R y la oportunidad de experimentar la tecnología.",
+      "Para actualizaciones se recomienda estar pendiente de la página web oficial: www.cihuahack.com y de la página de Facebook:  facebook.com/cihuahack"
+    ],
+    "answer_type": "text"
+  },
+  {
+    "id": 5,
+    "question": "¿Puedo participar virtualmente en Cihuahack?",
+    "answer": [
+      "No, los participantes necesariamente deben estar físicamente presente para participar en Cihuahack."
+    ],
+    "answer_type": "text"
+  },
+  {
+    "id": 6,
+    "question": "¿Pueden participar colaboradores de las empresas que apoyan el evento?",
+    "answer": [
+      "No, porque los jueces saldrán de estas empresas."
+    ],
+    "answer_type": "text"
+  },
+  {
+    "id": 7,
+    "question": "¿Todos los participantes deben ser programadores?",
+    "answer": [
+      "No necesariamente. Se reconoce que para este tipo de aplicaciones se necesitan tanto programadores como diseñadores; y puesto que se espera que esto se convierta en un negocio es bienvenida la participación multidisciplinaria. Sin embargo, es requisito que todos estén presentes durante el desarrollo de Cihuahack para que sean elegibles a los premios."
+    ],
+    "answer_type": "text"
+  },
+  {
+    "id": 8,
+    "question": "¿Cómo se elegirán a los grupos participantes?",
+    "answer": [
+      "La participación NO es automática. Habrá filtros para aquellos equipos que decidan participar. En los eventos se darán elementos de las temáticas a desarrollar para que puedan completar los retos durante el evento. En nuestra página facebook.com/cihuahack y en www.cihuahack.com se publicarán las fechas y horas relevantes."
+    ],
+    "answer_type": "text"
+  },
+  {
+    "id": 9,
+    "question": "¿Cuál es el costo para participar a Cihuahack?",
+    "answer": [
+      "Los grupos que serán elegidos para participar no deberán cancelar costo alguno para participar. Sin embargo, los costos de transporte para llegar al evento serán responsabilidad de los mismos participantes."
+    ],
+    "answer_type": "text"
+  },
+  {
+    "id": 10,
+    "question": "¿Cómo escogerá a los ganadores? ¿Cuáles serán los criterios que se evaluarán?",
+    "answer": [
+      "¿Cuán técnicamente impresionante es el proyecto?",
+      "¿Qué tan creativo, único y original es el proyecto?",
+      "¿Qué tan bien utilizaron los participantes el medio de Realidad Aumentada o Realidad Virtual para su proyecto?",
+      "¿Qué tan bien utilizaron los participantes los datos arqueológicos que se les proporcionaron?",
+      "Pertinencia y relevancia directa para solucionar el problema central o abordar el problema central",
+      "Facilidad de implementación. Por ejemplo, qué tan factible es implementar dentro de un año."
+    ],
+    "answer_type": "list"
+  },
+  {
+    "id": 11,
+    "question": "¿Qué pasa si gano?",
+    "answer": [
+      "Los premio serán entregados una vez se firme un contrato en el que los ganadores aceptan que los premios son no-transferibles y que se comprometen a las actividades de seguimiento del proyecto incluyendo sus mentorías."
+    ],
+    "answer_type": "text"
+  },
+  {
+    "id": 12,
+    "question": "¿A quién pertenece la propiedad intelectual producto de Cihuahack?",
+    "answer": [
+      "Se respetarán los derechos de propiedad intelectual de todos los participantes. El contenido original desarrollado por los participantes será de su propiedad."
+    ],
+    "answer_type": "text"
+  }
+]

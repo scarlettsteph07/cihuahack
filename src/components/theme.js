@@ -13,6 +13,7 @@ let theme = {
   white:                    '#ffffff',
 
   bgGray:                   '#fafafa',
+  bgBlue:                   '#EBEEF0',
 
   boxShadow:                'rgba(32,32,32,0.05) 0px 0px 30px 0px',
 

@@ -1,9 +1,12 @@
 
 import React from 'react'
+import _ from 'lodash/fp'
 import styled from 'styled-components'
 
 import { HomePageSection } from './'
+import { Question } from '../'
 import { IMAGES } from '../../lib/appConstants'
+import faqs from '../../lib/faqs'
 
 export const FaqsSection = () => {
   return (
@@ -13,7 +16,15 @@ export const FaqsSection = () => {
       headerImage={IMAGES.DOG}
     >
       <FaqsSectionsStyles>
-        <div className='faq__questions'></div>
+        {_.map(faq => (
+          <Question
+            key={faq.id}
+            id={faq.id}
+            question={faq.question}
+            answer={faq.answer}
+            answerType={faq.answer_type}
+          />
+        ))(faqs)}
       </FaqsSectionsStyles>
     </HomePageSection>
   )
