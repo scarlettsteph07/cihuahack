@@ -11,3 +11,8 @@ export const BRANDING = {
   SHARE_TEXT: '¡Únete al reto Cihuahack! Y sé parte de esta explosión creativa en realidad virtual y aumentada.',
   HASHTAGS:    ['Cihuahack', 'HackathonSV'],
 }
+
+export const IMAGES = {
+  DOG:     'url(svg/dog-alpha.svg)',
+  JAGUAR:  'url(svg/jaguar-alpha.svg)',
+}
