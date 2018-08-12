@@ -43,14 +43,14 @@ const HomePageSectionStyles = StyledSlatOuter.extend`
       flex-flow: column;
       justify-content: space-between;
       align-items: flex-start;
-      @media (min-width: ${({ theme }) => theme.large.start}) {
+      @media (min-width: ${({ theme }) => theme.medium.start}) {
         flex-flow: row;
       }
     }
 
     &__header {
       width: 100%;
-      @media (min-width: ${({ theme }) => theme.large.start}) {
+      @media (min-width: ${({ theme }) => theme.medium.start}) {
         width: 20%;
       }
 
@@ -75,6 +75,9 @@ const HomePageSectionStyles = StyledSlatOuter.extend`
       width: 100%;
       text-align: left;
       color: ${({theme}) => theme.textPrimary};
+      @media (min-width: ${({ theme }) => theme.medium.start}) {
+        width: 65%;
+      }
       @media (min-width: ${({ theme }) => theme.large.start}) {
         width: 75%;
       }

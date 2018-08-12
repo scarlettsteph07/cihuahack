@@ -54,6 +54,10 @@ const OrganizersSectionStyles = StyledSlatOuter.extend`
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
+      @media (min-width: ${({ theme }) => theme.medium.start}) {
+        width: 150px;
+        height: 150px;
+      }
       @media (min-width: ${({ theme }) => theme.large.start}) {
         width: 250px;
         height: 250px;

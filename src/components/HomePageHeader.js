@@ -18,6 +18,9 @@ export class HomePageHeader extends Component {
 const HomePageHeaderStyles = StyledSlatOuter.extend`
   height: 300px;
   box-shadow: ${({theme}) => theme.boxShadow};
+  @media (min-width: ${({ theme }) => theme.medium.start}) {
+    height: 450px;
+  }
   @media (min-width: ${({ theme }) => theme.large.start}) {
     height: 645px;
   }

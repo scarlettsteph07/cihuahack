@@ -68,7 +68,7 @@ const FooterStyles = styled.div`
         flex-flow: column;
         justify-content: space-around;
         align-items: flex-start;
-        @media (min-width: ${({theme}) => theme.large.start}) {
+        @media (min-width: ${({theme}) => theme.medium.start}) {
           font-size: 20px;
           letter-spacing: 1.5px;
         }
@@ -83,7 +83,7 @@ const FooterStyles = styled.div`
       &__info {
         display: flex;
         align-items: flex-start;
-        @media (min-width: ${({theme}) => theme.large.start}) {
+        @media (min-width: ${({theme}) => theme.medium.start}) {
           align-items: center;
         }
 
@@ -123,7 +123,7 @@ const FooterStyles = styled.div`
           display: flex;
           flex-flow: column;
           align-items: flex-start;
-          @media (min-width: ${({theme}) => theme.large.start}) {
+          @media (min-width: ${({theme}) => theme.medium.start}) {
             flex-flow: row;
           }
 
@@ -133,7 +133,7 @@ const FooterStyles = styled.div`
             text-decoration: none;
             border-bottom: solid 2px white;
             padding-bottom: 2px;
-            @media (min-width: ${({theme}) => theme.large.start}) {
+            @media (min-width: ${({theme}) => theme.medium.start}) {
               margin-left: 12px;
             }
 
