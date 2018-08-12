@@ -43,6 +43,11 @@ export const DesktopMenu = () => {
 }
 
 const DesktopMenuStyles = StyledSlatOuter.extend`
+  display: none;
+  @media (min-width: ${({ theme }) => theme.large.start}) {
+    display: inline-block;
+  }
+
   nav {
     width: 100%;
     height: 90px;

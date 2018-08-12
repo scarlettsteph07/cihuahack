@@ -41,12 +41,16 @@ const HeaderStyles = StyledSlatOuter.extend`
     }
 
     &__logo {
-      width: 200px;
+      width: 185px;
       height: 90px;
+      margin-left: -9px;
       background-image: url(/svg/logo--wordmark.svg);
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
+      @media (min-width: ${({ theme }) => theme.large.start}) {
+        width: 200px;
+      }
     }
   }
 `

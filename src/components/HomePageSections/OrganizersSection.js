@@ -29,7 +29,7 @@ export const OrganizersSection = () => {
 }
 
 const OrganizersSectionStyles = StyledSlatOuter.extend`
-  border-bottom: solid 10px #fafafa;
+  border-bottom: solid 10px ${({theme}) => theme.bgGray};
   .organizers {
     &__title {
       font-size: 35px;
@@ -40,7 +40,7 @@ const OrganizersSectionStyles = StyledSlatOuter.extend`
 
     &__logos {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
     }
 

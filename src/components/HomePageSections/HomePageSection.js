@@ -19,9 +19,9 @@ export const HomePageSection = ({title, slug, children, headerImage, url}: Props
       <StyledSlatInner className='section__inner' id={slug}>
         <div className='section__header'>
           <h2 className='section__header__title'>{title}</h2>
-          <a href={url} target='_blank' rel='noopener noreferrer'>
+          {headerImage && <a href={url} target='_blank' rel='noopener noreferrer'>
             <div className='section__header__image'/>
-          </a>
+          </a>}
         </div>
 
         <div className='section__content'>{children}</div>
@@ -40,17 +40,26 @@ const HomePageSectionStyles = StyledSlatOuter.extend`
   .section {
     &__inner {
       display: flex;
+      flex-flow: column;
       justify-content: space-between;
       align-items: flex-start;
+      @media (min-width: ${({ theme }) => theme.large.start}) {
+        flex-flow: row;
+      }
     }
 
     &__header {
-      width: 20%;
+      width: 100%;
+      @media (min-width: ${({ theme }) => theme.large.start}) {
+        width: 20%;
+      }
+
       &__title {
         font-size: 35px;
         text-transform: capitalize;
         text-align: left;
         margin: 0px;
+        margin-bottom: ${({headerImage}) => headerImage ? '0px' : '20px'};
       }
       &__image {
         width: 250px;
@@ -63,9 +72,12 @@ const HomePageSectionStyles = StyledSlatOuter.extend`
     }
 
     &__content {
-      width: 75%;
+      width: 100%;
       text-align: left;
       color: ${({theme}) => theme.textPrimary};
+      @media (min-width: ${({ theme }) => theme.large.start}) {
+        width: 75%;
+      }
     }
   }
 `

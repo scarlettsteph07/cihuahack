@@ -37,6 +37,10 @@ const HowToParticipateStyles = styled.div`
 
     &__list {
       width: 75%;
+      padding-left: 30px;
+      @media (min-width: ${({theme}) => theme.large.start}) {
+        padding-left: 40px;
+      }
       &__item {
         margin-bottom: 15px;
       }

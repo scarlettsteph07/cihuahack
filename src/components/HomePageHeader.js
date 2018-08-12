@@ -16,8 +16,11 @@ export class HomePageHeader extends Component {
 }
 
 const HomePageHeaderStyles = StyledSlatOuter.extend`
-  height: 645px;
+  height: 300px;
   box-shadow: ${({theme}) => theme.boxShadow};
+  @media (min-width: ${({ theme }) => theme.large.start}) {
+    height: 645px;
+  }
 
   .home-page-header {
     &__outer {
@@ -26,15 +29,23 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
     &__inner {
       height: 100%;
       padding: 0px;
+      margin: 0px;
+      @media (min-width: ${({ theme }) => theme.large.start}) {
+        margin: auto;
+      }
     }
 
     &__image {
+      margin-top: 45px;
       width: 100%;
       height: 100%;
       background-image: url(/svg/cover--with-logos.svg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+      @media (min-width: ${({ theme }) => theme.large.start}) {
+        margin-top: 0;
+      }
     }
   }
 `

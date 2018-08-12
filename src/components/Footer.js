@@ -32,7 +32,7 @@ export const Footer = () => {
             />
             <span className='footer__contact__info__text'>
             Síguenos en
-              <a href={CONTACT_URLS.FACEBOOK}>{CONTACT_URLS.FACEBOOK}</a>
+              <a href={CONTACT_URLS.FACEBOOK}>{CONTACT_URLS.FACEBOOK_SHORT}</a>
             </span>
           </div>
         </StyledSlatInner>
@@ -62,12 +62,16 @@ const FooterStyles = styled.div`
       &__inner {
         height: inherit;
         padding: 0;
-        font-size: 20px;
-        letter-spacing: 1.5px;
+        font-size: 16px;
+        letter-spacing: 1.2px;
         display: flex;
         flex-flow: column;
         justify-content: space-around;
         align-items: flex-start;
+        @media (min-width: ${({theme}) => theme.large.start}) {
+          font-size: 20px;
+          letter-spacing: 1.5px;
+        }
       }
 
       &__title {
@@ -78,7 +82,10 @@ const FooterStyles = styled.div`
 
       &__info {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        @media (min-width: ${({theme}) => theme.large.start}) {
+          align-items: center;
+        }
 
         &__logo {
           width: 50px;
@@ -113,12 +120,22 @@ const FooterStyles = styled.div`
         }
 
         &__text {
+          display: flex;
+          flex-flow: column;
+          align-items: flex-start;
+          @media (min-width: ${({theme}) => theme.large.start}) {
+            flex-flow: row;
+          }
+
           a {
-            margin-left: 10px;
+            margin-left: 0px;
             color: inherit;
             text-decoration: none;
             border-bottom: solid 2px white;
             padding-bottom: 2px;
+            @media (min-width: ${({theme}) => theme.large.start}) {
+              margin-left: 12px;
+            }
 
             &:hover {
               background-color: ${({theme}) => theme.white};

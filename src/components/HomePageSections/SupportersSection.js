@@ -36,6 +36,9 @@ const SupportersSectionStyles = StyledSlatOuter.extend`
   justify-content: space-between;
 
   .supporters {
+    &__inner{
+      width: 100%;
+    }
     &__title {
       font-size: 35px;
       text-align: left;
@@ -45,7 +48,7 @@ const SupportersSectionStyles = StyledSlatOuter.extend`
 
     &__logos {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
     }
 
