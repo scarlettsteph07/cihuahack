@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react'
 import _ from 'lodash/fp'
 
@@ -6,8 +7,13 @@ import StyledSlatInner from './StyledSlatInner'
 import SectionsData from '../lib/data'
 import { CONTACT_URLS } from '../lib/appConstants'
 
-export class MobileMenu extends Component {
+// TODO: fix linter parsing error
+type Props = {
+  handleOnClick: Function,
+}
+export class MobileMenu extends Component<Props> {
   render() {
+    const { handleOnClick } = this.props
     return (
       <MobileMenuStyles>
         <StyledSlatInner className='mobile-menu__inner'>
@@ -17,6 +23,7 @@ export class MobileMenu extends Component {
                 key={section.id}
                 className='mobile-menu__option'
                 href={`#${section.slug}`}
+                onClick={handleOnClick}
               >
                 {section.title}
               </a>
@@ -28,12 +35,14 @@ export class MobileMenu extends Component {
               href={`mailto:${CONTACT_URLS.EMAIL}?Subject=Información%20Cihuahack%20`}
               target='_blank'
               rel='noopener noreferrer'
+              onClick={handleOnClick}
             />
             <a
               className='mobile-menu__social-media mobile-menu__social-media--facebook'
               href={CONTACT_URLS.FACEBOOK}
               target='_blank'
               rel='noopener noreferrer'
+              onClick={handleOnClick}
             />
           </div>
         </StyledSlatInner>

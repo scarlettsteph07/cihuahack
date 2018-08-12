@@ -33,10 +33,15 @@ export const HomePageSection = ({title, slug, children, headerImage, url}: Props
 const HomePageSectionStyles = StyledSlatOuter.extend`
   border-bottom: solid 10px ${({theme}) => theme.bgGray};
   :target {
+    padding-top: 65px;
+    margin-top: -65px;
     display: block;
-    padding-top: 90px;
-    margin-top: -90px;
+    @media (min-width: ${({ theme }) => theme.large.start}) {
+      padding-top: 90px;
+      margin-top: -90px;
+    }
   }
+
   .section {
     &__inner {
       display: flex;
