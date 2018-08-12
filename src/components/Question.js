@@ -15,6 +15,8 @@ type State = {
   isActive: boolean,
 }
 
+const mapWithIndex = _.map.convert({ 'cap': false })
+
 export class Question extends Component<Props, State> {
   state = {
     isActive: false
@@ -28,14 +30,13 @@ export class Question extends Component<Props, State> {
 
   render() {
     const { id, question, answer, answerType } = this.props
-    console.log('answerType: ', answerType);
     const { isActive } = this.state
     return (
       <QuestionStyles isActive={isActive} answerType={answerType}>
         <div className='question__title' onClick={this.toggleQuestion}>{`${id}. ${question}`}</div>
         <div className='question__answer'>
-          {_.map(answerText => (
-            <div className='question__answer__text'>
+          {mapWithIndex((answerText, index) => (
+            <div key={index} className='question__answer__text'>
               {answerText}
             </div>
           ))(answer)}
