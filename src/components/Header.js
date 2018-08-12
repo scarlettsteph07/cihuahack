@@ -33,11 +33,13 @@ export class Header extends Component<Props, State> {
           <header className='header'>
             <a className='header__logo' href='/' />
             <DesktopMenu />
-            <ShareBox />
-            <button
-              className='header__mobile-menu__button'
-              onClick={this.toggleMobileMenu}
-            />
+            <div className='header__mobile-menu'>
+              <ShareBox />
+              <button
+                className='header__mobile-menu__button'
+                onClick={this.toggleMobileMenu}
+              />
+            </div>
           </header>
         </StyledSlatInner>
         {this.state.mobileMenuShown && <MobileMenu handleOnClick={this.toggleMobileMenu}/>}
@@ -66,7 +68,7 @@ const HeaderStyles = StyledSlatOuter.extend`
     }
 
     &__logo {
-      width: 185px;
+      width: 200px;
       height: 65px;
       margin-left: -9px;
       background-image: url(/svg/logo--wordmark.svg);
@@ -74,12 +76,15 @@ const HeaderStyles = StyledSlatOuter.extend`
       background-position: center;
       background-repeat: no-repeat;
       @media (min-width: ${({ theme }) => theme.large.start}) {
-        width: 200px;
         height: 90px;
       }
     }
 
     &__mobile-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
       &__button {
         width: 50px;
         height: 50px;
