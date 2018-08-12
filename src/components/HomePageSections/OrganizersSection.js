@@ -30,6 +30,16 @@ export const OrganizersSection = () => {
 
 const OrganizersSectionStyles = StyledSlatOuter.extend`
   border-bottom: solid 10px ${({theme}) => theme.bgGray};
+  :target {
+    padding-top: 65px;
+    margin-top: -65px;
+    display: block;
+    @media (min-width: ${({ theme }) => theme.large.start}) {
+      padding-top: 90px;
+      margin-top: -90px;
+    }
+  }
+
   .organizers {
     &__title {
       font-size: 35px;
