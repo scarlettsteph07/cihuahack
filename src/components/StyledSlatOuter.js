@@ -8,7 +8,7 @@ const StyledSlatOuter = styled.section`
   font-weight: normal;
   width: 100%;
   @media (min-width: ${theme.xlarge.inner}) {
-    max-width: ${theme.xlarge.outer};
+    ${'' /* max-width: ${theme.xlarge.outer}; */}
   };
 `
 

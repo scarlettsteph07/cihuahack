@@ -42,7 +42,7 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
       margin-top: 45px;
       width: 100%;
       height: 100%;
-      background-image: url(/svg/cover--with-logos.svg);
+      background-image: url(/svg/cover--no-blue-lines.svg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
