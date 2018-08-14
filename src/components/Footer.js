@@ -20,7 +20,10 @@ export const Footer = () => {
             />
             <span className='footer__contact__info__text'>
               Escríbenos a
-              <a href={`mailto:${CONTACT_URLS.EMAIL}?Subject=Información%20Cihuahack%20`}>{CONTACT_URLS.EMAIL}</a>
+              <a
+                href={`mailto:${CONTACT_URLS.EMAIL}?Subject=Información%20Cihuahack%20`}>
+                {CONTACT_URLS.EMAIL}
+              </a>
             </span>
           </div>
           <div className='footer__contact__info'>
@@ -32,7 +35,13 @@ export const Footer = () => {
             />
             <span className='footer__contact__info__text'>
             Síguenos en
-              <a href={CONTACT_URLS.FACEBOOK}>{CONTACT_URLS.FACEBOOK_SHORT}</a>
+              <a
+                href={CONTACT_URLS.FACEBOOK}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {CONTACT_URLS.FACEBOOK_SHORT}
+              </a>
             </span>
           </div>
         </StyledSlatInner>
