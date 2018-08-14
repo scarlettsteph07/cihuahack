@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import StyledSlatOuter from './StyledSlatOuter'
 import StyledSlatInner from './StyledSlatInner'
 import { CONTACT_URLS } from '../lib/appConstants'
+import { EXTERNAL_LINKS } from '../lib/appConstants'
 
 export const Footer = () => {
   return (
@@ -49,7 +50,17 @@ export const Footer = () => {
 
       <StyledSlatOuter className='footer__disclosure__outer'>
         <StyledSlatInner className='footer__disclosure__inner'>
-          Este proyecto es financiado por el Public Diplomacy Innovation Fund
+          <div className='footer__disclosure__text'>
+            Este proyecto es financiado por el Public Diplomacy Innovation Fund
+          </div>
+          <a
+            className='footer__disclosure__terms'
+            href={EXTERNAL_LINKS.TERMS_COND}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Términos y Condiciones
+          </a>
         </StyledSlatInner>
       </StyledSlatOuter>
     </FooterStyles>
@@ -168,9 +179,21 @@ const FooterStyles = styled.div`
         padding: 0;
         font-size: 12px;
         display: flex;
-        justify-content: center;
+        flex-flow: column;
+        justify-content: space-around;
         align-items: center;
-        align-items: center;
+        @media (min-width: ${({theme}) => theme.large.start}) {
+          justify-content: space-between;
+          flex-flow: row;
+        }
+      }
+
+      &__terms {
+        border-bottom: 1px solid ${({theme}) => theme.red};
+        &:hover {
+          color: ${({theme}) => theme.white};
+          background-color: ${({theme}) => theme.red};
+        }
       }
     }
   }
