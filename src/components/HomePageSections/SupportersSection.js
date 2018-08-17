@@ -22,8 +22,8 @@ export const SupportersSection = () => {
           <a href={EXTERNAL_LINKS.CASS} target='_blank' rel='noopener noreferrer'>
             <div className='supporters__logo supporters__logo--cass'/>
           </a>
-          <a href={EXTERNAL_LINKS.ART_CODE} target='_blank' rel='noopener noreferrer'>
-            <div className='supporters__logo supporters__logo--art-code'/>
+          <a href={EXTERNAL_LINKS.FUNDAR} target='_blank' rel='noopener noreferrer'>
+            <div className='supporters__logo supporters__logo--fundar'/>
           </a>
         </div>
       </StyledSlatInner>
@@ -77,6 +77,10 @@ const SupportersSectionStyles = StyledSlatOuter.extend`
 
       &--art-code {
         background-image: url('/images/logo--art-code.png');
+      }
+
+      &--fundar {
+        background-image: url('/images/logo--fundar.png');
       }
 
       &--abeu {
