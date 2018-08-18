@@ -18,6 +18,7 @@ export const EXTERNAL_LINKS = {
   ABEU: null,
   GERMINA: 'http://www.ufg.edu.sv/i.germina.html',
   USAID: 'https://www.usaid.gov/el-salvador',
+  FUNDAR: 'http://www.fundar.org.sv/',
   TERMS_COND: 'https://docs.google.com/document/d/1ieSuRBL3apEpD9ZL98uXPvD_BG4Dq4m3sn4opJ3hx5g/edit?usp=sharing',
 }
 
