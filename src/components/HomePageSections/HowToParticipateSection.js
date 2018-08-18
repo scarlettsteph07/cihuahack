@@ -19,7 +19,7 @@ export const HowToParticipateSection = () => {
           <li className='how-to-participate__list__item'>Equipos de cuatro personas</li>
           <li className='how-to-participate__list__item'>Uno de los miembros del equipo debe ser una mujer</li>
           <li className='how-to-participate__list__item'>Tener las capacidades técnicas para crear aplicaciones en AR/VR</li>
-          <li className='how-to-participate__list__item'>Inscribirse personalmente y a su grupo oficialmente en en link que estará disponible en este sitio web</li>
+          <li className='how-to-participate__list__item'>Inscribirse personalmente y a su grupo oficialmente en el link que estará disponible en este sitio web</li>
         </ul>
       </HowToParticipateStyles>
     </HomePageSection>
