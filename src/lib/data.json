@@ -19,12 +19,18 @@
   },
   {
     "id": 4,
+    "title": "Términos",
+    "slug": "https://docs.google.com/document/d/1ieSuRBL3apEpD9ZL98uXPvD_BG4Dq4m3sn4opJ3hx5g/edit",
+    "content": ""
+  },
+  {
+    "id": 5,
     "title": "Preguntas frecuentes",
     "slug": "#faq",
     "content": ""
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Organizan",
     "slug": "#organizan",
     "content": ""
