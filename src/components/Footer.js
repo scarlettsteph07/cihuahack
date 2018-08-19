@@ -14,11 +14,10 @@ export const Footer = () => {
           <h2 className='footer__contact__title'>¿Preguntas?</h2>
           <div className='footer__contact__info'>
             <a
-              className='footer__contact__info__logo footer__contact__info__logo__email'
               href={`mailto:${CONTACT_URLS.EMAIL}?Subject=Información%20Cihuahack%20`}
-              target='_blank'
-              rel='noopener noreferrer'
-            />
+            >
+              <div className='footer__contact__info__logo footer__contact__info__logo__email' />
+            </a>
             <span className='footer__contact__info__text'>
               Escríbenos a
               <a
@@ -29,11 +28,12 @@ export const Footer = () => {
           </div>
           <div className='footer__contact__info'>
             <a
-              className='footer__contact__info__logo footer__contact__info__logo__facebook'
               href={CONTACT_URLS.FACEBOOK}
               target='_blank'
               rel='noopener noreferrer'
-            />
+            >
+              <div className='footer__contact__info__logo footer__contact__info__logo__facebook'/>
+            </a>
             <span className='footer__contact__info__text'>
             Síguenos en
               <a

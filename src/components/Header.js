@@ -31,7 +31,9 @@ export class Header extends Component<Props, State> {
       >
         <StyledSlatInner className='header__inner'>
           <header className='header'>
-            <a className='header__logo' href='/' />
+            <a href='#cihuahack'>
+              <div className='header__logo' />
+            </a>
             <DesktopMenu />
             <div className='header__mobile-menu'>
               <ShareBox />

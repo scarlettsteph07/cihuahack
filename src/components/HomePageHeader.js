@@ -6,7 +6,7 @@ import StyledSlatInner from './StyledSlatInner'
 export class HomePageHeader extends Component {
   render() {
     return (
-      <HomePageHeaderStyles className='home-page-header__outer'>
+      <HomePageHeaderStyles className='home-page-header__outer' id='cihuahack'>
         <StyledSlatInner className='home-page-header__inner'>
           <div className='home-page-header__image'></div>
         </StyledSlatInner>
