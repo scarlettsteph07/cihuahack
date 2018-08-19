@@ -22,7 +22,8 @@ export class MobileMenu extends Component<Props> {
               <a
                 key={section.id}
                 className='mobile-menu__option'
-                href={`#${section.slug}`}
+                href={`${section.slug}`}
+                target={section.slug.startsWith('#') ? '_self' : '_blank'}
                 onClick={handleOnClick}
               >
                 {section.title}
