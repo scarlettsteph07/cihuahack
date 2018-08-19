@@ -31,19 +31,19 @@ export class MobileMenu extends Component<Props> {
           }
           <div className='mobile-menu__option mobile-menu__option__social'>
             <a
-              className='mobile-menu__social-media mobile-menu__social-media--email'
               href={`mailto:${CONTACT_URLS.EMAIL}?Subject=Información%20Cihuahack%20`}
-              target='_blank'
-              rel='noopener noreferrer'
               onClick={handleOnClick}
-            />
+            >
+              <div className='mobile-menu__social-media mobile-menu__social-media--email' />
+            </a>
             <a
-              className='mobile-menu__social-media mobile-menu__social-media--facebook'
               href={CONTACT_URLS.FACEBOOK}
               target='_blank'
               rel='noopener noreferrer'
               onClick={handleOnClick}
-            />
+            >
+              <div className='mobile-menu__social-media mobile-menu__social-media--facebook' />
+            </a>
           </div>
         </StyledSlatInner>
       </MobileMenuStyles>

@@ -53,13 +53,17 @@ export const PrizesSection = () => {
         </div>
         <div className='prizes__carousel'>
           <Slider {...settings} className='prizes__carousel'>
-            <div className='prizes__carousel'>
+            <div>
               <div className='prizes__carousel__image prizes__carousel__image--oculus'></div>
               <h3 className='prizes__carousel__text'>oculus rift headsets</h3>
             </div>
             <div>
               <div className='prizes__carousel__image prizes__carousel__image--laptop'></div>
               <h3 className='prizes__carousel__text'>oculus ready laptops</h3>
+            </div>
+            <div>
+              <div className='prizes__carousel__image prizes__carousel__image--pixel'></div>
+              <h3 className='prizes__carousel__text'>google pixel phones</h3>
             </div>
           </Slider>
         </div>
@@ -112,6 +116,10 @@ const PrizesSectionsStyles = styled.div`
         }
         &--laptop {
           background-image: url(/images/laptop.png);
+        }
+        &--pixel {
+          background-image: url(/images/pixel.png);
+          background-size: contain;
         }
       }
     }

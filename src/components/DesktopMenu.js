@@ -15,7 +15,13 @@ export const DesktopMenu = () => {
             {
               _.map((section) =>
                 <li key={section.id}>
-                  <a className='nav-item' href={`#${section.slug}`}>{section.title}</a>
+                  <a
+                    className='nav-item'
+                    href={`${section.slug}`}
+                    target={section.slug.startsWith('#') ? '_self' : '_blank'}
+                  >
+                    {section.title}
+                  </a>
                 </li>
               )(SectionsData)
             }
@@ -25,7 +31,9 @@ export const DesktopMenu = () => {
                 href={`http://www.facebook.com/sharer.php?u=${encodeURIComponent(decodeURIComponent(CONTACT_URLS.WEBSITE))}`}
                 target='_blank'
                 rel='noopener noreferrer'
-              />
+              >
+
+              </a>
             </li>
             <li>
               <a
@@ -33,7 +41,9 @@ export const DesktopMenu = () => {
                 href={`https://twitter.com/share?url=${CONTACT_URLS.WEBSITE}&amp;text=${encodeURIComponent(BRANDING.SHARE_TEXT)}&amp;hashtags=${BRANDING.HASHTAGS}`}
                 target='_blank'
                 rel='noopener noreferrer'
-              />
+              >
+
+              </a>
             </li>
           </ul>
         </nav>

@@ -6,7 +6,7 @@ import { IMAGES } from '../../lib/appConstants'
 
 export const AboutSection = () => {
   return (
-    <HomePageSection title='Cihuahack' slug='cihuahack' headerImage={IMAGES.DOG}>
+    <HomePageSection title='Cihuahack' slug='inicio' headerImage={IMAGES.DOG}>
       <AboutSectionStyles>
         <div className='about__text'>
           <span className='about__text__bold'>Cihuahack</span> es un evento de programación de dos días que intenta involucrar un máximo de 200 jóvenes creadores de software para crear productos comercialmente viables y, al mismo tiempo, ayudar a reforzar un sentido de orgullo cultural en El Salvador.

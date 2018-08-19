@@ -8,17 +8,19 @@ export const ShareBox = () => {
     <ShareBoxStyles>
       <span className='share-box__title'></span>
       <a
-        className='share-box__link share-box__link__facebook'
         href={`http://www.facebook.com/sharer.php?u=${encodeURIComponent(decodeURIComponent(CONTACT_URLS.WEBSITE))}`}
         target='_blank'
         rel='noopener noreferrer'
-      />
+      >
+        <div className='share-box__link share-box__link__facebook' />
+      </a>
       <a
-        className='share-box__link share-box__link__twitter'
         href={`https://twitter.com/share?url=${CONTACT_URLS.WEBSITE}&amp;text=${encodeURIComponent(BRANDING.SLOGAN)}&amp;hashtags=${BRANDING.HASHTAGS}`}
         target='_blank'
         rel='noopener noreferrer'
-      />
+      >
+        <div className='share-box__link share-box__link__twitter'/>
+      </a>
     </ShareBoxStyles>
   )
 }
