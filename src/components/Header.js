@@ -70,7 +70,7 @@ const HeaderStyles = StyledSlatOuter.extend`
     }
 
     &__logo {
-      width: 200px;
+      width: 185px;
       height: 65px;
       margin-left: -9px;
       background-image: url(/svg/logo--wordmark.svg);
