@@ -20,6 +20,7 @@ export const EXTERNAL_LINKS = {
   USAID: 'https://www.usaid.gov/el-salvador',
   FUNDAR: 'http://www.fundar.org.sv/',
   TERMS_COND: 'https://docs.google.com/document/d/1ieSuRBL3apEpD9ZL98uXPvD_BG4Dq4m3sn4opJ3hx5g/edit?usp=sharing',
+  PRE_EVENTBRITE: 'https://www.eventbrite.es/e/entradas-lanzamiento-de-cihuahack-hackathon-por-un-cihuatan-virtual-49196370669?aff=efbevent',
 }
 
 export const BRANDING = {
