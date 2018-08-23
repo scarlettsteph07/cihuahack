@@ -32,7 +32,34 @@ export const PrizesSection = () => {
             TechLab, expertos locales y estadounidenses ofrecerán orientación experta y consejo a los ganadores de cada categoría de Cihuahack para que traigan sus ideas de prototipo a la aplicación de trabajo.
           </li>
           <li className='prizes__list__item'>
-            Oportunidades de networking con incubadoras / aceleradoras de negocios.
+          Oportunidades para iniciar un proceso de incubación de negocio con la incubadora / aceleradora
+            &nbsp;<a
+              className='prizes__link'
+              href={EXTERNAL_LINKS.GERMINA}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Germina
+            </a>&nbsp;
+            de la Universidad
+            &nbsp;<a
+              className='prizes__link'
+              href={EXTERNAL_LINKS.UFG}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Francisco Gavidia
+            </a>
+            , patrocinado por
+            &nbsp;<a
+              className='prizes__link'
+              href={EXTERNAL_LINKS.USAID}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              USAID
+            </a>
+            . Germina alienta la creación de empresas de tecnología y comunicación en El Salvador.
           </li>
           <li className='prizes__list__item'>
             Oportunidad de solicitar una pasantía en los EE.UU.
@@ -62,8 +89,8 @@ export const PrizesSection = () => {
               <h3 className='prizes__carousel__text'>oculus ready laptops</h3>
             </div>
             <div>
-              <div className='prizes__carousel__image prizes__carousel__image--pixel'></div>
-              <h3 className='prizes__carousel__text'>google pixel phones</h3>
+              <div className='prizes__carousel__image prizes__carousel__image--samsung'></div>
+              <h3 className='prizes__carousel__text'>Samsung Galaxy S8</h3>
             </div>
           </Slider>
         </div>
@@ -119,6 +146,10 @@ const PrizesSectionsStyles = styled.div`
         }
         &--pixel {
           background-image: url(/images/pixel.png);
+          background-size: contain;
+        }
+        &--samsung {
+          background-image: url(/images/samsungS8.png);
           background-size: contain;
         }
       }
