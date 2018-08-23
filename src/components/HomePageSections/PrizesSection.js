@@ -50,7 +50,7 @@ export const PrizesSection = () => {
             >
               Francisco Gavidia
             </a>
-            , patrocinado por
+            , apoyada por
             &nbsp;<a
               className='prizes__link'
               href={EXTERNAL_LINKS.USAID}
