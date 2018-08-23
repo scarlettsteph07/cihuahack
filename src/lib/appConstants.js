@@ -16,6 +16,7 @@ export const EXTERNAL_LINKS = {
   CASS: 'http://www.ca2s.com/?lang=en',
   ART_CODE: 'http://artcode.la',
   ABEU: null,
+  UFG: 'https://www.ufg.edu.sv/',
   GERMINA: 'http://www.ufg.edu.sv/i.germina.html',
   USAID: 'https://www.usaid.gov/el-salvador',
   FUNDAR: 'http://www.fundar.org.sv/',
