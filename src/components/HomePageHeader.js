@@ -23,7 +23,7 @@ export class HomePageHeader extends Component {
             <h1 className='home-page-header__side-text__title'>Cihuahack</h1>
             <h2 className='home-page-header__side-text__subtitle'>Gira Universitaria y lanzamiento</h2>
             <h4 className='home-page-header__side-text__text'>
-              Cihuahack se fue de gira, retando a jóvenes universitarios a unirse a la hackaton por un cihuatán virtual.
+              Cihuahack se fue de gira, retando a jóvenes universitarios a unirse a la hackathon por un Cihuatán virtual.
             </h4>
           </div>
           <Slider {...settings} className='home-page-header__carousel'>
