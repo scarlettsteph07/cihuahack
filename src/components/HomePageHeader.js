@@ -1,14 +1,33 @@
 import React, { Component } from 'react'
 
+import Slider from 'react-slick'
 import StyledSlatOuter from './StyledSlatOuter'
 import StyledSlatInner from './StyledSlatInner'
+import images from '../lib/carousel'
+import styled from 'styled-components'
 
 export class HomePageHeader extends Component {
   render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 200,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+    }
     return (
       <HomePageHeaderStyles className='home-page-header__outer' id='cihuahack'>
         <StyledSlatInner className='home-page-header__inner'>
-          <div className='home-page-header__image'></div>
+          <Slider {...settings} className='home-page-header__carousel carousel'>
+            {
+              images.map((img, i) => 
+                <div key={i}>
+                  <BackgroundImage img={img.imageUrl} />
+                </div>
+              )
+            }
+          </Slider>
         </StyledSlatInner>
       </HomePageHeaderStyles>
     )
@@ -30,6 +49,7 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
     }
 
     &__inner {
+      max-width: 100% !important;
       height: 100%;
       padding: 0px;
       margin: 0px;
@@ -38,17 +58,37 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
       }
     }
 
-    &__image {
-      margin-top: 45px;
-      width: 100%;
+    &__carousel {
+      width: 100% !important;
       height: 100%;
-      background-image: url(/svg/cover--no-blue-lines.svg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      @media (min-width: ${({ theme }) => theme.large.start}) {
-        margin-top: 0;
+      .slick-dots {
+        bottom: 25px;
+      }
+      .slick-dots li {
+        margin: 0 10px;
+        button {
+        &::before {
+          color: white;
+          font-size: 14px;
+          }
+        }
       }
     }
+  }
+`
+
+const BackgroundImage = styled.div`
+  width: 100%;
+  height: 300px;
+  background-image: ${props => props.img ? `url(/images/${props.img})` : ''};
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-width: ${({ theme }) => theme.medium.start}) {
+    margin-top: 0;
+    height: 450px;
+  }
+  @media (min-width: ${({ theme }) => theme.large.start}) {
+    height: 645px;
   }
 `
