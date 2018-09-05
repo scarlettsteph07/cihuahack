@@ -74,8 +74,13 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
       height: 235px;
       width: 200px;
       z-index: 999;
+      padding: 0 20px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
       h1 {
-          margin: 10px 0 0px 0;
+          margin: 0;
           font-size: 2em;
         }
       h2 {
@@ -83,9 +88,8 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
       }
       h4 {
         margin: 0 auto;
-        width: 80%;
         font-weight: 400;
-        font-size: 0.95em;
+        font-size: 14px;
       }
       @media (min-width: ${({ theme }) => theme.medium.start}) {
         width: 300px;
@@ -93,14 +97,12 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
         height: 385px;
 
         h1 {
-          margin: 40px 0 0px 0;
           font-size: 3em;
         }
         h2 {
           font-size: 1.5em;
         }
         h4 {
-          width: 75%;
           font-size: 1.35em;
         }
       }
@@ -109,14 +111,12 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
         margin-top: 90px;
         height: 555px;
         h1 {
-          margin: 85px 0 0px 0;
           font-size: 4.5em;
         }
         h2 {
           font-size: 2em;
         }
         h4 {
-          width: 50%;
           font-size: 1.5em;
         }
       }
