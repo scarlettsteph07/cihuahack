@@ -8,7 +8,7 @@ import { EXTERNAL_LINKS } from '../../lib/appConstants'
 export class TimeLine extends Component {
   render() {
     return (
-      <HomePageSection title='¿Cómo inscribise?' slug='suscribe'>
+      <HomePageSection title='¿Cómo inscribirse?' slug='suscribe'>
         <TimeLineSectionStyles className='timeline'>
           <div className='timeline__content'>
             {
