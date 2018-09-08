@@ -9,6 +9,7 @@ import {
   FaqsSection,
   OrganizersSection,
   SupportersSection,
+  TimeLine
 } from './HomePageSections/'
 // import SectionsData from '../lib/data'
 
@@ -17,6 +18,7 @@ export class HomePage extends Component {
     return (
       <HomePageStyles className='home-page'>
         <HomePageHeader/>
+        <TimeLine />
         <AboutSection />
         <HowToParticipateSection />
         <PrizesSection />
