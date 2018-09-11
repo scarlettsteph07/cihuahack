@@ -67,6 +67,10 @@ const TimeLineSectionStyles = styled.div`
             clear: both;
             text-align: justify;
             padding-right: 100px;
+
+          @media (max-width: ${({ theme }) => theme.small.end}) {
+            width: 50%;
+          }
         }
       }
     }
@@ -79,6 +83,7 @@ const TimeLineSectionStyles = styled.div`
       color: ${({theme}) => theme.white};
       font-weight: bold;
       font-size: 1.8em;
+      text-align: center;
     }
   }
 `
