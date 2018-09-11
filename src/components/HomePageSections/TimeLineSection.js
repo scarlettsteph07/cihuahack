@@ -5,7 +5,7 @@ import { HomePageSection } from './'
 import data from '../../lib/timeline'
 import { EXTERNAL_LINKS } from '../../lib/appConstants'
 
-export class TimeLine extends Component {
+export class TimeLineSection extends Component {
   render() {
     return (
       <HomePageSection title='¿Cómo inscribirse?' slug='suscribe'>
