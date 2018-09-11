@@ -22,7 +22,6 @@ export const EXTERNAL_LINKS = {
   FUNDAR: 'http://www.fundar.org.sv/',
   TERMS_COND: 'https://docs.google.com/document/d/1ieSuRBL3apEpD9ZL98uXPvD_BG4Dq4m3sn4opJ3hx5g/edit?usp=sharing',
   PRE_EVENTBRITE: 'https://www.eventbrite.es/e/entradas-lanzamiento-de-cihuahack-hackathon-por-un-cihuatan-virtual-49196370669?aff=efbevent',
-  SUSCRIBE_FORM: 'https://docs.google.com/forms/d/e/1FAIpQLSd6qOTOcebwrDoQynVzX8O8smnY4Rh3oj1DWtILArGWAS6jag/viewform',
 }
 
 export const BRANDING = {
