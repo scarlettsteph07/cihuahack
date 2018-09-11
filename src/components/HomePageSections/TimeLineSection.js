@@ -8,7 +8,7 @@ import { EXTERNAL_LINKS } from '../../lib/appConstants'
 export class TimeLineSection extends Component {
   render() {
     return (
-      <HomePageSection title='¿Cómo inscribirse?' slug='suscribe'>
+      <HomePageSection title='¿Cómo inscribirse?' slug='inscribite'>
         <TimeLineSectionStyles className='timeline'>
           <div className='timeline__content'>
             {
@@ -65,7 +65,7 @@ const TimeLineSectionStyles = styled.div`
             width: 63%;
             margin: -35px 0 15px 140px;
             clear: both;
-            text-align: justify;
+            text-align: left;
             padding-right: 100px;
 
           @media (max-width: ${({ theme }) => theme.small.end}) {
