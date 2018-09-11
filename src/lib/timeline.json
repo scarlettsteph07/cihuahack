@@ -16,16 +16,26 @@
   },
   {
     "id": 4,
-    "text": "Ven a la hackathon el 27 y 28 de octubre",
-    "icon": "icon--calendar.svg"
+    "text": "Sintoniza nuestros livestreams en Facebook: charla informativa (Septiembre 11) y charla técnica (Octubre 2)",
+    "icon": "icon--stream.svg"
   },
   {
     "id": 5,
-    "text": "Desarrolla tu idea junto a tu equipo durante los dos dias de Cihuahack",
+    "text": "El 20 de octubre realizaremos una visita a Cihuatán junto a los 200 jóvenes que participarán en Cihuahack",
     "icon": "icon--pyramid.svg"
   },
   {
     "id": 6,
+    "text": "Ven a la hackathon el 27 y 28 de octubre",
+    "icon": "icon--calendar.svg"
+  },
+  {
+    "id": 7,
+    "text": "Desarrolla tu idea junto a tu equipo durante los dos dias de Cihuahack",
+    "icon": "icon--developer.svg"
+  },
+  {
+    "id": 8,
     "text": "¡Gana premios!",
     "icon": "icon--prizes.svg"
   }
