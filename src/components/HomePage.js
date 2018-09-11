@@ -18,11 +18,11 @@ export class HomePage extends Component {
     return (
       <HomePageStyles className='home-page'>
         <HomePageHeader/>
-        <TimeLineSection />
         <AboutSection />
         <HowToParticipateSection />
         <PrizesSection />
         <FaqsSection />
+        <TimeLineSection />
         <OrganizersSection />
         <SupportersSection />
       </HomePageStyles>
