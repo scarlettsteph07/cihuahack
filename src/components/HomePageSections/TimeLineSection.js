@@ -106,6 +106,8 @@ const Circle = styled.div`
   p {
     margin: 12px auto;
     line-height: 100%;
+    font-weight: 600;
+    color: ${({ theme }) => theme.blue};
   }
 `
 
