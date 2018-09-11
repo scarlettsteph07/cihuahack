@@ -2,31 +2,31 @@
   {
     "id": 1,
     "text": "Arma tu equipo. Recuerda que debe incluir al menos una mujer",
-    "icon": "htc_equipo.svg"
+    "icon": "icon--team.svg"
   },
   {
     "id": 2,
     "text": "Elige una de las 3 categorias para participar e inscribe a tu equipo.",
-    "icon": "htc_inscripcion.svg"
+    "icon": "icon--inscription.svg"
   },
   {
     "id": 3,
     "text": "Prepara tu idea mientras llega el día de la hackathon",
-    "icon": "htc_idea.svg"
+    "icon": "icon--idea.svg"
   },
   {
     "id": 4,
     "text": "Ven a la hackathon el 27 y 28 de octubre",
-    "icon": "htc_fechas.svg"
+    "icon": "icon--calendar.svg"
   },
   {
     "id": 5,
     "text": "Desarrolla tu idea junto a tu equipo durante los dos dias de Cihuahack",
-    "icon": "htc_piramide.svg"
+    "icon": "icon--pyramid.svg"
   },
   {
     "id": 6,
     "text": "¡Gana premios!",
-    "icon": "htc_premios.svg"
+    "icon": "icon--prizes.svg"
   }
 ]
