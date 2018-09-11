@@ -84,11 +84,10 @@ const TimeLineSectionStyles = styled.div`
       font-weight: bold;
       font-size: 1.8em;
       text-align: center;
+      border: 3px solid ${({ theme }) => theme.blue};
       &:hover {
-        margin-top: -6px;
         color: ${({ theme }) => theme.blue};
         background-color: white;
-        border: 3px solid ${({ theme }) => theme.blue};
       }
     }
   }
