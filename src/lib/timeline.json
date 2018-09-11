@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "text": "Arma tu equipo. Recuerda que debe incluir al menos una mujer",
+    "icon": "icon--team.svg"
+  },
+  {
+    "id": 2,
+    "text": "Elige una de las 3 categorias para participar e inscribe a tu equipo.",
+    "icon": "icon--inscription.svg"
+  },
+  {
+    "id": 3,
+    "text": "Prepara tu idea mientras llega el día de la hackathon",
+    "icon": "icon--idea.svg"
+  },
+  {
+    "id": 4,
+    "text": "Sintoniza nuestros livestreams en Facebook: charla informativa (Septiembre 11) y charla técnica (Octubre 2)",
+    "icon": "icon--stream.svg"
+  },
+  {
+    "id": 5,
+    "text": "El 20 de octubre realizaremos una visita a Cihuatán junto a los 200 jóvenes que participarán en Cihuahack",
+    "icon": "icon--pyramid.svg"
+  },
+  {
+    "id": 6,
+    "text": "Ven a la hackathon el 27 y 28 de octubre",
+    "icon": "icon--calendar.svg"
+  },
+  {
+    "id": 7,
+    "text": "Desarrolla tu idea junto a tu equipo durante los dos dias de Cihuahack",
+    "icon": "icon--developer.svg"
+  },
+  {
+    "id": 8,
+    "text": "¡Gana premios!",
+    "icon": "icon--prizes.svg"
+  }
+]
