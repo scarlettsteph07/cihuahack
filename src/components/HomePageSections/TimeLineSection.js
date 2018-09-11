@@ -84,6 +84,12 @@ const TimeLineSectionStyles = styled.div`
       font-weight: bold;
       font-size: 1.8em;
       text-align: center;
+      &:hover {
+        margin-top: -6px;
+        color: ${({ theme }) => theme.blue};
+        background-color: white;
+        border: 3px solid ${({ theme }) => theme.blue};
+      }
     }
   }
 `
@@ -112,7 +118,7 @@ const Icon = styled.div`
   background-image: ${({ bgImage }) => bgImage ? `url(/svg/${bgImage})` : ''};
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 `
 const VerticalLine = styled.div`
   background-color: ${({theme}) => theme.red};
