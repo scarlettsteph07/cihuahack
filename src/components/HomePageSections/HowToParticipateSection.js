@@ -8,7 +8,7 @@ export const HowToParticipateSection = () => {
   return (
     <HomePageSection
       title='Los Retos'
-      slug='como-participar'
+      slug='retos'
     >
       <HowToParticipateStyles>
         <div className='how-to-participate__text'>
