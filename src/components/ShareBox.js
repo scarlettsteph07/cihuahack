@@ -46,7 +46,8 @@ const ShareBoxStyles = styled.div`
         background-position: center;
 
         &__twitter {
-          background-image: url(/svg/icon--twitter-red.svg);
+          background-image: url(/svg/icon--youtube.svg);
+          width: 80px;
         }
 
         &__facebook {

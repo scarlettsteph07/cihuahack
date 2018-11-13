@@ -4,7 +4,7 @@ import _ from 'lodash/fp'
 import StyledSlatOuter from './StyledSlatOuter'
 import StyledSlatInner from './StyledSlatInner'
 import SectionsData from '../lib/data'
-import { CONTACT_URLS, BRANDING } from '../lib/appConstants'
+import { CONTACT_URLS, EXTERNAL_LINKS } from '../lib/appConstants'
 
 export const DesktopMenu = () => {
   return (
@@ -38,8 +38,8 @@ export const DesktopMenu = () => {
             <li>
               <a
                 className='nav-social-media nav-social-media__twitter'
-                href={`https://twitter.com/share?url=${CONTACT_URLS.WEBSITE}&amp;text=${encodeURIComponent(BRANDING.SHARE_TEXT)}&amp;hashtags=${BRANDING.HASHTAGS}`}
-                target='_blank'
+                href={EXTERNAL_LINKS.PROJECTS_LINK}
+                target={EXTERNAL_LINKS.PROJECTS_LINK.startsWith('#') ? '_self' : '_blank'}
                 rel='noopener noreferrer'
               >
 
@@ -118,7 +118,8 @@ const DesktopMenuStyles = StyledSlatOuter.extend`
     background-position: center;
 
     &__twitter {
-      background-image: url(/svg/icon--twitter-red.svg);
+      background-image: url(/svg/icon--youtube.svg);
+      width: 60px;
     }
 
     &__facebook {

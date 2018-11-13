@@ -7,32 +7,26 @@
   },
   {
     "id": 2,
-    "title": "¿Cómo Participar?",
+    "title": "Los Retos",
     "slug": "#como-participar",
     "content": ""
   },
   {
     "id": 3,
-    "title": "Premios",
+    "title": "Ganadores",
     "slug": "#premios",
     "content": ""
   },
   {
     "id": 4,
-    "title": "Términos",
+    "title": "Premios",
     "slug": "https://docs.google.com/document/d/1ieSuRBL3apEpD9ZL98uXPvD_BG4Dq4m3sn4opJ3hx5g/edit",
     "content": ""
   },
   {
     "id": 5,
-    "title": "Preguntas frecuentes",
+    "title": "Recap",
     "slug": "#faq",
-    "content": ""
-  },
-  {
-    "id": 6,
-    "title": "Inscríbete",
-    "slug": "#inscribite",
     "content": ""
   }
 ]

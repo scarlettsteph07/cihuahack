@@ -2,25 +2,39 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { HomePageSection } from './'
-import { IMAGES } from '../../lib/appConstants'
+import challenges from '../../lib/challenge'
 
 export const HowToParticipateSection = () => {
   return (
     <HomePageSection
-      title='¿Cómo Participar?'
+      title='Los Retos'
       slug='como-participar'
-      headerImage={IMAGES.JAGUAR}
     >
       <HowToParticipateStyles>
-        <div className='how-to-participate__text__bold'>Los requisitos para participar son:</div>
-        <ul className='how-to-participate__list'>
-          <li className='how-to-participate__list__item'>Ser salvadoreño y residir en El Salvador</li>
-          <li className='how-to-participate__list__item'>Adultos mayores de 18 años</li>
-          <li className='how-to-participate__list__item'>Equipos de cuatro personas</li>
-          <li className='how-to-participate__list__item'>Uno de los miembros del equipo debe ser una mujer</li>
-          <li className='how-to-participate__list__item'>Tener las capacidades técnicas para crear aplicaciones en AR/VR</li>
-          <li className='how-to-participate__list__item'>Inscribirse personalmente y a su grupo oficialmente en el link que estará disponible en este sitio web</li>
-        </ul>
+        <div className='how-to-participate__text'>
+          <span className='how-to-participate__text__bold'>Cihuahack</span> consiste en tres retos. Tres categorías diseñadas para trabajar en conjunto con el sitio arqueológico Cihuatán.
+        </div>
+        <div className='how-to-participate__list'>
+          {
+            challenges.map(section => (
+              <Challenge
+                className='how-to-participate__list__item'
+                key={section.id}>
+                <ChallengeImage
+                  bgImage={section.image}
+                />
+                <div className='how-to-participate__list__section'>
+                  <p className='how-to-participate__list__section__title'>
+                    {section.title}
+                  </p>
+                  <p className='how-to-participate__list__section__text'>
+                    {section.content}
+                  </p>
+                </div>
+              </Challenge>
+            ))
+          }
+        </div>
       </HowToParticipateStyles>
     </HomePageSection>
   )
@@ -36,14 +50,52 @@ const HowToParticipateStyles = styled.div`
     }
 
     &__list {
-      width: 75%;
-      padding-left: 30px;
-      @media (min-width: ${({theme}) => theme.large.start}) {
-        padding-left: 40px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-around;
+      &__section {
+        padding: 0 30px;
+        text-align: center;
+        &__title {
+          color: ${({ theme }) => theme.red};
+        }
       }
-      &__item {
-        margin-bottom: 15px;
+      @media (max-width: ${({ theme }) => theme.small.end}) {
+        padding-top: 55px;
+        &__item {
+          width: 100%;
+        }
+      }
+      @media (min-width: ${({ theme }) => theme.medium.start}) {
+        padding-top: 55px;
+        margin: 0 0 0 -225px;
+        flex-flow: wrap;
+        &__item {
+          height: 400px;
+        }
+      }
+      @media (min-width: ${({ theme }) => theme.large.start}) {
+        padding-top: 55px;
+        margin: 0 0 0 -283px;
+        &__item {
+          height: 350px;
+        }
       }
     }
   }
+`
+
+const Challenge = styled.div`
+  width: 30%;
+  height: 350px;
+`
+
+const ChallengeImage = styled.div`
+  width: 100%;
+  height: 166px;
+  background-image: ${({ bgImage }) => `url(/images/${bgImage})` || ''};
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 `

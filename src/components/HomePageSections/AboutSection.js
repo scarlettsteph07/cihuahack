@@ -9,13 +9,16 @@ export const AboutSection = () => {
     <HomePageSection title='Cihuahack' slug='inicio' headerImage={IMAGES.DOG}>
       <AboutSectionStyles>
         <div className='about__text'>
-          <span className='about__text__bold'>Cihuahack</span> es un evento de programación de dos días que intenta involucrar un máximo de 200 jóvenes creadores de software para crear productos comercialmente viables y, al mismo tiempo, ayudar a reforzar un sentido de orgullo cultural en El Salvador.
+          <span className='about__text__bold'>200 talentosos jóvenes salvadoreños se juntaron durante un fin de semana durante el cual, por 48 horas, trabajaron sin parar para completar el reto Cihuahack. </span>
         </div>
         <div className='about__text'>
-          El evento estará enfocado a crear, utilizando tecnologías de realidad aumentada y virtual (AR/VR), aplicaciones que muestren como fue en su plenitud el Parque Arqueológico de Cihuatán. Los trabajos con mejor potencial serán premiados con equipo especializado y mentorías para desarrollar su prototipo y convertirlo en una app funcional.
+           Utilizando tecnologías de realidad aumentada y virtual (AR/VR), estos jóvenes crearon aplicaciones que muestran como se vivió en su plenitud la antigua ciudad de Cihuatán. Los trabajos con mejor potencial fueron elegidos por un grupo de jueces expertos y fueron premiados con equipo especializado y mentorías para desarrollar su prototipo y convertirlo en una app funcional.
         </div>
         <div className='about__text'>
-          Este proyecto también incluye un evento de preparación para aprovechar la experiencia de especialistas en AR/VR de EE.UU., empresarios salvadoreños de IT, expertos en patrimonio cultural y autoridades de propiedad intelectual. Una vez concluido Cihuahack, se realizarán actividades de seguimiento por un año para apoyar a los participantes con actividades de tutoría, redes de desarrollo profesional y la preparación para un futuro evento en 2019.
+          A manera de brindar seguimiento a los equipos participantes, se realizarán actividades de tutoría, redes de desarrollo profesional y la preparación para un futuro evento en 2019.
+        </div>
+        <div className='about__text'>
+          Sin duda alguna Cihuahack es la combinación perfecta entre la creatividad de la realidad virtuall y nuestra riqueza cultural salvadoreña. 
         </div>
       </AboutSectionStyles>
     </HomePageSection>

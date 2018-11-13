@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Reconstrucción Virtual:",
+    "content": "Crear una aplicación que muestre Cihuatán en sus días de gloria, usando realidad virtual o aumentada.",
+    "image": "virtual--building.svg"
+  },
+  {
+    "id": 2,
+    "title": "Desarrollo de un Videojuego:",
+    "content": "Crear un formato de juego para ayudar a los visitantes a comprender cómo Cihuatán fue utilizado por la cultura que vivió en la ciudad.",
+    "image": "videogames.svg"
+  },
+  {
+    "id": 3,
+    "title": "Guía Turística:",
+    "content": "Crear una aplicación que sirva como guía turística en realidad virtual o aumentada para los visitantes de Cihuatán.",
+    "image": "tourist--guide.svg"
+  }
+]
