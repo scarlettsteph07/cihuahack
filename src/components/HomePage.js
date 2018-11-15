@@ -6,12 +6,10 @@ import {
   AboutSection,
   HowToParticipateSection,
   PrizesSection,
-  FaqsSection,
   OrganizersSection,
   SupportersSection,
-  TimeLineSection
+  WinnerSection
 } from './HomePageSections/'
-// import SectionsData from '../lib/data'
 
 export class HomePage extends Component {
   render() {
@@ -20,9 +18,8 @@ export class HomePage extends Component {
         <HomePageHeader/>
         <AboutSection />
         <HowToParticipateSection />
+        <WinnerSection />
         <PrizesSection />
-        <FaqsSection />
-        <TimeLineSection />
         <OrganizersSection />
         <SupportersSection />
       </HomePageStyles>

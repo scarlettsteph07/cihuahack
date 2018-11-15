@@ -12,7 +12,7 @@ export const HowToParticipateSection = () => {
     >
       <HowToParticipateStyles>
         <div className='how-to-participate__text'>
-          <span className='how-to-participate__text__bold'>Cihuahack</span> consiste en tres retos. Tres categorías diseñadas para trabajar en conjunto con el sitio arqueológico Cihuatán.
+          <span className='how-to-participate__text__bold'>Los jóvenes participaron en 3 diferentes categorías o retos acerca del sitio arqueológico Cihuatán. </span>
         </div>
         <div className='how-to-participate__list'>
           {

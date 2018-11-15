@@ -18,7 +18,7 @@ export const AboutSection = () => {
           A manera de brindar seguimiento a los equipos participantes, se realizarán actividades de tutoría, redes de desarrollo profesional y la preparación para un futuro evento en 2019.
         </div>
         <div className='about__text'>
-          Sin duda alguna Cihuahack es la combinación perfecta entre la creatividad de la realidad virtuall y nuestra riqueza cultural salvadoreña. 
+          Sin duda alguna Cihuahack es la combinación perfecta entre la creatividad de la realidad virtual y nuestra riqueza cultural salvadoreña. 
         </div>
       </AboutSectionStyles>
     </HomePageSection>

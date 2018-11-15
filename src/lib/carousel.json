@@ -1,26 +1,39 @@
 [
   {
     "id": 1,
-    "imageUrl": "01.jpg"
+    "imageUrl": "01.jpg",
+    "text": [
+      "Después de 48 horas de trabajo continuo, los equipos “Yolistlí”, “Xibalbá” y “Logic Dev” resultaron ganadores de las categorías Recreación Virtual, Creación de Guía Turística y Videojuegos respectivamente."
+    ],
+    "title": "Ganadores",
+    "mainTopic": true
   },
   {
     "id": 2,
-    "imageUrl": "02.jpg"
+    "imageUrl": "03.jpg",
+    "text": [
+      "El equipo incluyó varios elementos que ofrecen facilidades al usuario como:",
+      "Interacción con un mapa estático que permite al usuario obtener la experiencia desde un centro de convenciones, instituto de turismo, o exposiciones en lugares diferentes al sitio real que permite experimentar la realidad aumentada en el celular.",
+      "Interacción con el sitio arqueológico real, a través de pointers que despliegan las misma interacción en realidad aumentada, informativa e interactiva con el usuario.",
+      "Consideremos entonces que el propotipo ofrece interacciones atractivas al usuario que agregaban valor al sitio arqueológico como 'guía turística' en caso de ser implementado"
+    ],
+    "title": "Xibalba - Guía Turística"
   },
   {
     "id": 3,
-    "imageUrl": "03.jpg"
+    "imageUrl": "04.jpg",
+    "text": [
+      "El equipo nos sorprendió por haber integrado diferentes tecnologías en el mismo proyecto. Podrían controlar el entorno a través del teléfono celular y visualizar todo el juego con lentes de realidad virtual, siendo el juego más completo de todos por integrar diferentes sistemas como uno de inventario para recolectar items y poder utilizarlos durante el juego."
+    ],
+    "title": "Logic Dev - Videojuegos"
   },
   {
     "id": 4,
-    "imageUrl": "04.jpg"
-  },
-  {
-    "id": 5,
-    "imageUrl": "05.jpg"
-  },
-  {
-    "id": 6,
-    "imageUrl": "06.jpg"
+    "imageUrl": "02.jpg",
+    "text": [
+      "Yolistli no solo logró reconstruir Cihuatán en realidad virtual a como lucía en sus tiempos de gloria, sino que también impresionó a los jueces por ser tecnológicamente innovador.",
+      "Yolistli fue capaz de distribuir su solución como una aplicación web, permitiendo a cualquier persona usar la aplicación sin necesidad de descargar nada, lo único requerido son los visores de realidad virtual para el celular o computadora."
+    ],
+    "title": "Yolistli - Reconstrucción Virtual"
   }
 ]
