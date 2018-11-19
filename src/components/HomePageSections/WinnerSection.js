@@ -139,7 +139,7 @@ const ImageContainer = styled.div`
   margin: 0 auto;
   width: 862px;
   @media (max-width: ${({ theme }) => theme.medium.start}) {
-    padding-top: 250px;
+    padding-top: 270px;
     width: auto;
   }
 `
@@ -147,14 +147,14 @@ const ImageContainer = styled.div`
 const ImageText = styled.p`
   margin: 0 auto;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1em;
   padding: 5px 5px 0 0;
   @media (min-width: ${({ theme }) => theme.medium.start}) {
     font-size: 1.08em;
   }
   @media (min-width: ${({ theme }) => theme.large.start}) {
     padding: 15px 5px 0 0;
-    font-size: 1.15em;
+    font-size: 18px;
   }
 `
 const ImageTitle = styled.h1`
@@ -168,7 +168,7 @@ const ImageTitle = styled.h1`
     font-size: ${({ mainTopic }) => mainTopic ? '2.1em' : '1.4em'};
   }
   @media (min-width: ${({ theme }) => theme.large.start}) {
-    font-size: ${({ mainTopic }) => mainTopic ? '2.5em' : '1.6em'};
+    font-size: ${({ mainTopic }) => mainTopic ? '40px' : '25px'};
   }
 `
 
