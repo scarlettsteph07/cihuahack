@@ -12,10 +12,8 @@
     "id": 2,
     "imageUrl": "03.jpg",
     "text": [
-      "El equipo incluyó varios elementos que ofrecen facilidades al usuario como:",
-      "Interacción con un mapa estático que permite al usuario obtener la experiencia desde un centro de convenciones, instituto de turismo, o exposiciones en lugares diferentes al sitio real que permite experimentar la realidad aumentada en el celular.",
-      "Interacción con el sitio arqueológico real, a través de pointers que despliegan las misma interacción en realidad aumentada, informativa e interactiva con el usuario.",
-      "Consideremos entonces que el propotipo ofrece interacciones atractivas al usuario que agregaban valor al sitio arqueológico como 'guía turística' en caso de ser implementado"
+      "El equipo incluyó varios elementos que ofrecen facilidades al usuario, como: Interacción con un mapa estático que permite al usuario obtener la experiencia desde un centro de convenciones, instituto de turismo o exposiciones en lugares diferentes al sitio real que permite experimentar la realidad aumentada en el celular.",
+      "El prototipo ofrece integraciones atractivas al usuario que agregan valor al sitio arqueológico como “Guía turística”"
     ],
     "title": "Xibalba - Guía Turística"
   },

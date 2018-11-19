@@ -55,6 +55,9 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
   background-image: linear-gradient(209deg, #000d72, #050929 88%);
   height: 300px;
   box-shadow: ${({ theme }) => theme.boxShadow};
+  @media (max-width: ${({ theme }) => theme.medium.start}) {
+    height: 600px;
+  }
   @media (min-width: ${({ theme }) => theme.medium.start}) {
     height: 450px;
   }
@@ -80,19 +83,26 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
       height: 235px;
       width: 200px;
       z-index: 999;
-      padding: 30px 20px 0 20px;
+      padding: 40px 20px 0 100px;
       display: flex;
       flex-flow: column;
-      ${'' /* align-items: center; */}
-      ${'' /* justify-content: center; */}
       text-align: left;
+      @media (max-width: ${({ theme }) => theme.medium.start}) {
+        text-align: center;
+        width: 9.5%;
+        max-width: 9.5%;
+        height: 210px;
+        padding: 20px 20px 0 10px;
+      }
       @media (min-width: ${({ theme }) => theme.medium.start}) {
-        width: 300px;
-        height: 353px;
+        width: 275px;
+        height: 395px;
+        padding: 30px 20px 0 30px;
       }
       @media (min-width: ${({ theme }) => theme.large.start}) {
-        width: 400px;
+        width: 300px;
         height: 523px;
+        padding: 40px 20px 0 100px;
       }
     }
     &__carousel {
@@ -112,52 +122,76 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
           }
         }
       }
+      @media (min-width: ${({ theme }) => theme.medium.start}) {
+        .slick-dots {
+          bottom: 50px;
+        }
+      }
+      @media (min-width: ${({ theme }) => theme.large.start}) {
+        .slick-dots {
+          bottom: 25px;
+        }
+      }
     }
   }
 `
 const ImageContainer = styled.div`
   margin: 0 auto;
   width: 862px;
+  @media (max-width: ${({ theme }) => theme.medium.start}) {
+    padding-top: 250px;
+    width: auto;
+  }
 `
 
 const ImageText = styled.p`
   margin: 0 auto;
   font-weight: 400;
   font-size: 14px;
+  padding: 5px 5px 0 0;
   @media (min-width: ${({ theme }) => theme.medium.start}) {
-    font-size: 1.35em;
+    font-size: 1.08em;
   }
   @media (min-width: ${({ theme }) => theme.large.start}) {
-    padding: 5px 5px 0 0;
-    font-size: 1.3em;
+    padding: 15px 5px 0 0;
+    font-size: 1.15em;
   }
 `
 const ImageTitle = styled.h1`
   padding-bottom: 10px;
   margin: 0;
   font-size: 1.2em;
+  @media (max-width: ${({ theme }) => theme.medium.start}) {
+    font-size: ${({ mainTopic }) => mainTopic ? '2.1em' : '1.2em'};
+  }
   @media (min-width: ${({ theme }) => theme.medium.start}) {
-    font-size: 3em;
+    font-size: ${({ mainTopic }) => mainTopic ? '2.1em' : '1.4em'};
   }
   @media (min-width: ${({ theme }) => theme.large.start}) {
-    font-size: ${({ mainTopic }) => mainTopic ? '2.5em' : '1.9em'};
+    font-size: ${({ mainTopic }) => mainTopic ? '2.5em' : '1.6em'};
   }
 `
 
 const BackgroundImage = styled.div`
-  ${'' /* margin-left: 175px; */}
   width: 862px;
   height: 300px;
   background-image: ${({ bgImage }) => bgImage ? `url(/images/${bgImage})` : ''};
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media (max-width: ${({ theme }) => theme.medium.start}) {
+    width: 100%;
+  }
   @media (min-width: ${({ theme }) => theme.medium.start}) {
-    margin-top: 0;
-    height: 450px;
+    margin-top: 25px;
+    height: 400px;
+    width: 650px;
+    margin-left: 250px;
   }
   @media (min-width: ${({ theme }) => theme.large.start}) {
     height: 555px;
+    width: 862px;
+    margin-top: 0;
     margin-left: 175px;
   }
 `
