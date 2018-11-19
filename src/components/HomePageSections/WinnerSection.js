@@ -56,7 +56,7 @@ const HomePageHeaderStyles = StyledSlatOuter.extend`
   height: 300px;
   box-shadow: ${({ theme }) => theme.boxShadow};
   @media (max-width: ${({ theme }) => theme.medium.start}) {
-    height: 600px;
+    height: 625px;
   }
   @media (min-width: ${({ theme }) => theme.medium.start}) {
     height: 450px;
