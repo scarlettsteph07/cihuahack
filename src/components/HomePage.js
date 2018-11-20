@@ -8,7 +8,8 @@ import {
   PrizesSection,
   OrganizersSection,
   SupportersSection,
-  WinnerSection
+  WinnerSection,
+  RecapSection
 } from './HomePageSections/'
 
 export class HomePage extends Component {
@@ -20,6 +21,7 @@ export class HomePage extends Component {
         <HowToParticipateSection />
         <WinnerSection />
         <PrizesSection />
+        <RecapSection />
         <OrganizersSection />
         <SupportersSection />
       </HomePageStyles>

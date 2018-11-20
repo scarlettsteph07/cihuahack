@@ -10,8 +10,8 @@ export const SupportersSection = () => {
       <StyledSlatInner className='supporters__inner'>
         <h2 className='supporters__title'>Con el Apoyo de</h2>
         <div className='supporters__logos'>
-          <a href={EXTERNAL_LINKS.ABEU} target='_blank' rel='noopener noreferrer'>
-            <div className='supporters__logo supporters__logo--abeu'/>
+          <a href={EXTERNAL_LINKS.FUNDAR} target='_blank' rel='noopener noreferrer'>
+            <div className='supporters__logo supporters__logo--fundar' />
           </a>
           <a href={EXTERNAL_LINKS.KADEVJO} target='_blank' rel='noopener noreferrer'>
             <div className='supporters__logo supporters__logo--kadevjo'/>
@@ -21,9 +21,6 @@ export const SupportersSection = () => {
           </a>
           <a href={EXTERNAL_LINKS.CASS} target='_blank' rel='noopener noreferrer'>
             <div className='supporters__logo supporters__logo--cass'/>
-          </a>
-          <a href={EXTERNAL_LINKS.FUNDAR} target='_blank' rel='noopener noreferrer'>
-            <div className='supporters__logo supporters__logo--fundar'/>
           </a>
         </div>
       </StyledSlatInner>
@@ -59,8 +56,8 @@ const SupportersSectionStyles = StyledSlatOuter.extend`
       background-position: center;
       background-repeat: no-repeat;
       @media (min-width: ${({ theme }) => theme.large.start}) {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
       }
 
       &--kadevjo {
