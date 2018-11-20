@@ -7,7 +7,7 @@ import challenges from '../../lib/recap'
 export const RecapSection = () => {
   return (
     <HomePageSection
-      title='Cihuahack Recap'
+      title='Cihuahack Recap'
       slug='recap'
     >
       <RecapSectionStyles>
