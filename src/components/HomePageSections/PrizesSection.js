@@ -88,10 +88,6 @@ export const PrizesSection = () => {
               <div className='prizes__carousel__image prizes__carousel__image--laptop'></div>
               <h3 className='prizes__carousel__text'>oculus ready laptops</h3>
             </div>
-            <div>
-              <div className='prizes__carousel__image prizes__carousel__image--samsung'></div>
-              <h3 className='prizes__carousel__text'>Samsung Galaxy S8</h3>
-            </div>
           </Slider>
         </div>
       </PrizesSectionsStyles>
